@@ -1,0 +1,23 @@
+@import "./variable";
+@import "./customize-bootstrap-ui";
+@import "./pre-write";
+@import "./custom-class";
+@import "./sidebar";
+@import "./navbar";
+@import "./notification";
+@import "./main-section";
+@import "./responsive";
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+a{
+    text-decoration: none!important;
+}
+p{
+    font-size: 0.9rem!important;
+}
+img{
+    object-fit: contain!important;
+    object-position: center!important;
+}

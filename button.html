@@ -1,0 +1,364 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Button elements | qbytAdmin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="position-relative">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="container-fluid px-0">
+        <!-- The side bar -->
+        <div class="side-bar bg-primary-c">
+            <div class="side-menu-brand d-flex flex-row justify-content-center clear mt-3">
+                <img src="img/QbyteIcon.png" alt="bran_name" class="brand-img">
+                <a href="#" class="brand-name mt-2 ml-2 font-weight-bold text-light">qbytAdmin</a>
+            </div>
+            <!-- Side bar menu -->
+            <div class="the_menu mt-5">
+                <h6 class="side-menu-heading font-weight-bold pb-2 mx-3">Main Menu</h6>
+                <!-- Menu item -->
+                <div id="accordion">
+                    <ul class="side-menu p-0 m-0 mt-3">
+                        <li class="side-menu-item px-3"><a href="index.html" class="w-100 py-3 pl-4">Dashboard</a></li>
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#sub_menu_1" aria-expanded="false" aria-controls="sub_menu_1">Basic UI Elements</a></li>
+                        <!-- Sub menu -->
+                        <div id="sub_menu_1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="button.html" class="w-100 pl-4 small">Button</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="alert.html" class="w-100 pl-4 small">Alert</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Dropdown</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Typography</a></li>
+                            </ul>
+                        </div>
+
+
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Form Elements</a></li>
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Charts</a></li>
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Tables</a></li>
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Icons</a></li>
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#sub_menu_2" aria-expanded="true" aria-controls="sub_menu_2">ChUser Pages</a></li>
+                        <!-- Sub menu -->
+                        <div id="sub_menu_2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="blank.html" class="w-100 pl-4 small">Blank Page</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Login</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Register</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">404</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">500</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Main section -->
+        <main class="bg-light">
+            <!-- The navbar -->
+            <nav class="navbar navbar-expand navbar-light bg-light py-3">
+                <p class="navbar-brand mb-0 pb-0 d-md-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
+                <!-- Navbar search section -->
+                <div class="navb-search ml-5 d-none d-md-block">
+                    <form action="#" method="POST">
+                        <div class="input-group search-round">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <div class="input-group-append">
+                                <button class="btn border" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Navbar right menu section -->
+                <div class="navb-menu ml-auto d-flex flex-row">
+                    <!-- Message dropdown -->
+                    <div class="dropdown dropdown-arow-none d-contents text-center mx-2 pt-1">
+                        <!-- Icon -->
+                        <a href="#" class="w-100 dropdown-toggle text-muted position-relative" data-toggle="dropdown">
+                            <i class="far fa-envelope fa-lg"></i>
+                            <span class="badge badge-danger position-absolute notification-badge">3</span>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-max-height p-0">
+                            <!-- Dropdown item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <!-- Profile image -->
+                                    <div class="notification-icon bg-secondary-c pt-3"><img src="img/profile.jpg" alt="img" class="w-75 img-round"></div>
+                                    <!-- Message notification -->
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">James <span class="badge badge-pill badge-primary">1</span></p>
+                                        <small>James : Hey! Are you busy?</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Dropdown item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <!-- Profile image -->
+                                    <div class="notification-icon bg-secondary-c pt-3"><img src="img/profile.jpg" alt="img" class="w-75 img-round"></div>
+                                    <!-- Message notification -->
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">Jhone <span class="badge badge-pill badge-primary">1</span></p>
+                                        <small>Jhone : Hey! I need help.</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Dropdown item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <!-- Profile image -->
+                                    <div class="notification-icon bg-secondary-c pt-3"><img src="img/profile.jpg" alt="img" class="w-75 img-round"></div>
+                                    <!-- Message notification -->
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">Mariam <span class="badge badge-pill badge-primary">1</span></p>
+                                        <small>Mariam : information</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Notification dropdown -->
+                    <div class="dropdown dropdown-arow-none d-contents text-center mx-2 pt-1">
+                        <!-- icon -->
+                        <a href="#" class="w-100 dropdown-toggle text-muted position-relative" data-toggle="dropdown">
+                            <i class="far fa-bell fa-lg"></i>
+                            <span class="badge badge-primary position-absolute notification-badge">3</span>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu dropdown-menu-right p-0 dropdown-menu-max-height">
+                            <!-- Menu item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <div class="notification-icon bg-secondary-c pt-3 px-3"><i class="far fa-envelope text-primary fa-lg"></i></div>
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">New message <span class="badge badge-pill badge-primary">New</span></p>
+                                        <small>James : Hey! Are you busy?</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Menu item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <div class="notification-icon bg-secondary-c pt-3 px-3"><i class="fas fa-clipboard-list text-success fa-lg"></i></div>
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="m-0">New order received <span class="badge badge-pill badge-success">New</span></p>
+                                        <small>3 iPhone x</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Menu item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0 pr-2">
+                                <div class="d-flex flex-row border-bottom">
+                                    <div class="notification-icon bg-secondary-c pt-3 px-3"><i class="fas fa-box-open text-warning fa-lg"></i></div>
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="m-0">Product out of stock <span class="badge badge-pill badge-warning small">1</span></p>
+                                        <small>Headphone E63</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Profile action dropdown -->
+                    <div class="dropdown dropdown-arow-none d-contents text-center mx-2">
+                        <!-- Icon -->
+                        <a href="#" class="w-100 dropdown-toggle text-muted" data-toggle="dropdown"><img src="img/profile.jpg" alt="profile" class="profile-avatar"></a>
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-max-height">
+                            <!-- Menu items -->
+                            <a href="#" class="dropdown-item disabled small"><i class="far fa-user mr-1"></i> Md.Maruf Ahmed</a>
+                            <a href="#" class="dropdown-item text-secondary-light">Account setting</a>
+                            <a href="#" class="dropdown-item text-secondary-light">Billing history</a>
+                            <a href="#" class="dropdown-item text-secondary-light">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- End navbar section -->
+            
+            <!--Page Body part -->
+            <div class="page-body p-4 text-dark">
+                <!-- Page heading -->
+                <div class="page-heading border-bottom d-flex flex-row">
+                    <h5 class="font-weight-normal">Buttons</h5>
+                    <small class="mt-2 ml-2">UI elements</small>
+                </div>
+                <!-- All button elements card's -->
+                <div class="row mt-4">
+                    <div class="col-md-6 mt-4">
+                        <!-- Default button card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Default Buttons</div>
+                                <div class="buttons">
+                                    <button class="btn btn-primary m-2">Primary</button>
+                                    <button class="btn btn-success m-2">Success</button>
+                                    <button class="btn btn-danger m-2">Danger</button>
+                                    <button class="btn btn-warning m-2">Warning</button>
+                                    <button class="btn btn-info m-2">Info</button>
+                                    <button class="btn btn-light m-2">Light</button>
+                                    <button class="btn btn-dark m-2">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <!-- Rounded button card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Rounded Buttons</div>
+                                <div class="buttons">
+                                    <button class="btn btn-primary rounded m-2">Primary</button>
+                                    <button class="btn btn-success rounded m-2">Success</button>
+                                    <button class="btn btn-danger rounded m-2">Danger</button>
+                                    <button class="btn btn-warning rounded m-2">Warning</button>
+                                    <button class="btn btn-info rounded m-2">Info</button>
+                                    <button class="btn btn-light rounded m-2">Light</button>
+                                    <button class="btn btn-dark rounded m-2">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <!-- Raised button card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Raised Buttons</div>
+                                <div class="buttons">
+                                    <button class="btn btn-raised btn-primary m-2">Primary</button>
+                                    <button class="btn btn-raised btn-success m-2">Success</button>
+                                    <button class="btn btn-raised btn-danger m-2">Danger</button>
+                                    <button class="btn btn-raised btn-warning m-2">Warning</button>
+                                    <button class="btn btn-raised btn-info m-2">Info</button>
+                                    <button class="btn btn-raised btn-light m-2">Light</button>
+                                    <button class="btn btn-raised btn-dark m-2">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <!-- Outline button card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Outline Buttons</div>
+                                <div class="buttons">
+                                    <button class="btn btn-outline-primary m-2">Primary</button>
+                                    <button class="btn btn-outline-success m-2">Success</button>
+                                    <button class="btn btn-outline-danger m-2">Danger</button>
+                                    <button class="btn btn-outline-warning m-2">Warning</button>
+                                    <button class="btn btn-outline-info m-2">Info</button>
+                                    <button class="btn btn-outline-light m-2">Light</button>
+                                    <button class="btn btn-outline-dark m-2">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <!-- block button card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Block Buttons</div>
+                                <div class="buttons">
+                                    <button class="btn btn-primary btn-block m-2">Primary</button>
+                                    <button class="btn btn-success btn-block m-2">Success</button>
+                                    <button class="btn btn-warning btn-block m-2">Warning</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <!-- Large & Small Buttons button card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Large & Small Buttons Buttons</div>
+                                <div class="buttons">
+                                    <button class="btn btn-primary btn-sm m-2">Primary</button>
+                                    <button class="btn btn-success btn-sm m-2">Success</button>
+                                    <button class="btn btn-warning btn-sm m-2">Warning</button>
+                                    <br>
+                                    <button class="btn btn-primary m-2">Primary</button>
+                                    <button class="btn btn-success m-2">Success</button>
+                                    <button class="btn btn-warning m-2">Warning</button>
+                                    <br>
+                                    <button class="btn btn-primary btn-lg m-2">Primary</button>
+                                    <button class="btn btn-success btn-lg m-2">Success</button>
+                                    <button class="btn btn-warning btn-lg m-2">Warning</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <!-- Buttons group button card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Button group</div>
+                                <div class="buttons">
+                                    <div class="btn-group">
+                                        <button class="btn btn-outline-dark">Left</button>
+                                        <button class="btn btn-outline-dark">Middle</button>
+                                        <button class="btn btn-outline-dark">Right</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <!-- Button with Icons card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Button with Icons</div>
+                                <div class="buttons">
+                                    <button class="btn btn-primary m-2"><i class="fas fa-wifi"></i> Wifi</button>
+                                    <button class="btn btn-success m-2"><i class="fas fa-caret-up"></i> Up</button>
+                                    <button class="btn btn-warning m-2"><i class="fas fa-atom"></i> Atom</button>
+                                    <button class="btn btn-info m-2"><i class="fas fa-car"></i> Car</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+  </div>
+  
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/echarts.min.js"></script>
+  <script src="js/vendor/echarts.option.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

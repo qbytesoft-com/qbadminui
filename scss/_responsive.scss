@@ -1,0 +1,30 @@
+ 
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+    @media only screen and (min-width : 576px){
+        button.close{
+            position: unset;
+        }
+    }
+   @media only screen and (min-width: 768px) {
+    .page-active{
+        filter: unset;
+        -webkit-filter: unset;
+    }
+    .body-active{
+        overflow: unset;
+    }
+    .side-bar{
+        height: 100vh!important;
+        width: 17rem!important;
+        visibility: unset;
+        left: 0;
+        top: 0;
+    }
+    main{
+        width: calc( 100% - 70px - 200px )!important;
+    }
+}
