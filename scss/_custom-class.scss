@@ -31,6 +31,9 @@
     object-position: center!important;
     border-radius: 50%!important;
 }
+.rounded{
+    border-radius: 5rem!important;
+}
 .rounded-lg{
     border-radius: 0.6rem!important;
 }
@@ -51,6 +54,13 @@
 .bg-primary-c{
     background: $bg-primary-c!important;
 }
+.box-shadow-none{
+    box-shadow: unset!important;
+}
+.background-none{
+    background: unset;
+}
+
 
 
 //Alert 
@@ -77,4 +87,22 @@
 //danger custom alert
 .alert-card.alert-danger{
     box-shadow: 0 4px 15px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.1), inset 0 2px 0 0 $danger!important;
+}
+
+// Accordin
+.accordin-card{
+    box-shadow: unset!important;
+    border: unset!important;
+}
+.accordion-right-icon a::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f078";
+    margin: 0 8px;
+    float: right;
+    position: absolute;
+    right: 15px;
+}
+.accordion-right-icon a.collapsed::after{
+    content: "\f077";
 }

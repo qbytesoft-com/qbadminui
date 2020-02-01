@@ -16,7 +16,6 @@
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Open Sans', sans-serif;
 }
 
 /*
@@ -102,6 +101,9 @@ textarea {
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 a{
     text-decoration: none!important;
 }

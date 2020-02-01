@@ -1,6 +1,6 @@
 /* Customize bootstrap classes */
 .dropdown-menu{
-    margin: 0.125rem 1rem 0!important;;
+    margin: 0.125rem 1rem 0!important;
 }
 .text-primary {
     color: $primary !important;
@@ -35,9 +35,6 @@
 }
 .badge-info {
     background-color: $info!important;
-}
-.rounded{
-    border-radius: 5rem!important;
 }
 
         // button
@@ -323,4 +320,126 @@ button.close{
     position: absolute;
     top: 0;
     right: 0.5rem;
+}
+
+// Badge
+.badge{
+    font-weight: 400;
+}
+// badge outline
+.badge-outline-primary{
+    @extend .background-none;
+    border: 1px solid $primary;
+    color: $primary;
+}
+.badge-outline-secondary{
+    @extend .background-none;
+    border: 1px solid $secondary;
+    color: $secondary;
+}
+.badge-outline-success{
+    @extend .background-none;
+    border: 1px solid $success;
+    color: $success;
+}
+.badge-outline-danger{
+    @extend .background-none;
+    border: 1px solid $danger;
+    color: $danger;
+}
+.badge-outline-warning{
+    @extend .background-none;
+    border: 1px solid $warning;
+    color: $warning;
+}
+.badge-outline-info{
+    @extend .background-none;
+    border: 1px solid $info;
+    color: $info;
+}
+.badge-outline-dark{
+    @extend .background-none;
+    border: 1px solid $dark;
+    color: $dark;
+}
+// end badge outline
+// Badge rounded
+.badge-rounded{
+    border-radius: 50%;
+    color: $white;
+    justify-content: center;
+}
+.badge-rounded-sm{
+    @extend .badge-rounded;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+}
+.badge-rounded-lg{
+    @extend .badge-rounded;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+}
+.badge-rounded-xl{
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    font-size: 1rem;
+}
+.badge-rounded-primary,.badge-rounded-success,.badge-rounded-danger,.badge-rounded-warning,.badge-rounded-info,.badge-rounded-dark{
+    @extend .badge-rounded-sm;
+}
+    // lg
+
+.badge-rounded-primary.lg,.badge-rounded-success.lg,.badge-rounded-danger.lg,.badge-rounded-warning.lg,.badge-rounded-info.lg,.badge-rounded-dark.lg{
+    @extend .badge-rounded-lg;
+}
+// Badge squary
+.badge-square{
+    border-radius: 20%;
+    color: $white;
+    justify-content: center;
+    
+}
+.badge-square-sm{
+    @extend .badge-square;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+}
+.badge-square-lg{
+    @extend .badge-square;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+}
+.badge-square-primary,.badge-square-success,.badge-square-danger,.badge-square-warning,.badge-square-info,.badge-square-dark{
+    @extend .badge-square-sm;
+}
+    //lg
+.badge-square-primary.lg,.badge-square-success.lg,.badge-square-danger.lg,.badge-square-warning.lg,.badge-square-info.lg,.badge-square-dark.lg{
+    @extend .badge-square-lg;
+}
+    // Xl
+.badge-square-primary.xl,.badge-square-success.xl,.badge-square-danger.xl,.badge-square-warning.xl,.badge-square-info.xl,.badge-square-dark.xl,.badge-rounded-primary.xl,.badge-rounded-success.xl,.badge-rounded-danger.xl,.badge-rounded-warning.xl,.badge-rounded-info.xl,.badge-rounded-dark.xl{
+    @extend .badge-rounded-xl;
+}
+    // badge bg
+.badge-rounded-primary,.badge-square-primary{
+    background: $primary;
+}
+.badge-rounded-success,.badge-square-success{
+    background: $success;
+}.badge-rounded-danger,.badge-square-danger{
+    background: $danger;
+}
+.badge-rounded-warning,.badge-square-warning{
+    background: $warning;
+}
+.badge-rounded-info,.badge-square-info{
+    background: $info;
+}
+.badge-rounded-dark,.badge-square-dark{
+    background: $dark;
 }

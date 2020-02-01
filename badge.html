@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Button elements | qbytAdmin</title>
+  <title>Badge page | qbytAdmin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google fonts -->
@@ -39,9 +39,18 @@
                         <!-- Sub menu -->
                         <div id="sub_menu_1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                             <ul class="side-sub-menu p-0">
-                                <li class="side-sub-menu-item px-3"><a href="button.html" class="w-100 pl-4 small">Button</a></li>
                                 <li class="side-sub-menu-item px-3"><a href="alert.html" class="w-100 pl-4 small">Alert</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="accordion.html" class="w-100 pl-4 small">Accordion</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="badge.html" class="w-100 pl-4 small">Badge</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="button.html" class="w-100 pl-4 small">Button</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="bootstrap_tab.html" class="w-100 pl-4 small">Bootstrap tab</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="cards.html" class="w-100 pl-4 small">Cards</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="carousels.html" class="w-100 pl-4 small">Carousels</a></li>
                                 <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Dropdown</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="list.html" class="w-100 pl-4 small">Llist</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="paginations.html" class="w-100 pl-4 small">Paginations</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="progressbar.html" class="w-100 pl-4 small">Progressbar</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="tooltip.html" class="w-100 pl-4 small">Tooltip</a></li>
                                 <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Typography</a></li>
                             </ul>
                         </div>
@@ -194,156 +203,160 @@
                     </div>
                 </div>
             </nav>
-            <!-- End navbar section -->
+
             
             <!--Page Body part -->
             <div class="page-body p-4 text-dark">
-                <!-- Page heading -->
                 <div class="page-heading border-bottom d-flex flex-row">
-                    <h5 class="font-weight-normal">Buttons</h5>
+                    <h5 class="font-weight-normal">Badge</h5>
                     <small class="mt-2 ml-2">UI elements</small>
                 </div>
-                <!-- All button elements card's -->
+                <!-- All badge component -->
                 <div class="row mt-4">
                     <div class="col-md-6 mt-4">
-                        <!-- Default button card -->
+                        <!-- Outline style badge -->
                         <div class="card rounded-lg">
                             <div class="card-body">
-                                <div class="card-title">Default Buttons</div>
-                                <div class="buttons">
-                                    <button class="btn btn-primary m-2">Primary</button>
-                                    <button class="btn btn-success m-2">Success</button>
-                                    <button class="btn btn-danger m-2">Danger</button>
-                                    <button class="btn btn-warning m-2">Warning</button>
-                                    <button class="btn btn-info m-2">Info</button>
-                                    <button class="btn btn-light m-2">Light</button>
-                                    <button class="btn btn-dark m-2">Dark</button>
+                                <div class="card-title">Badge outline</div>
+                                <div class="badges">
+                                    <span class="badge badge-outline-primary badge-pill p-2 m-1">Primary</span>
+                                    <span class="badge badge-outline-secondary badge-pill p-2 m-1">Secondary</span>
+                                    <span class="badge badge-outline-success badge-pill p-2 m-1">Success</span>
+                                    <span class="badge badge-outline-danger badge-pill p-2 m-1">Danger</span>
+                                    <span class="badge badge-outline-warning badge-pill p-2 m-1">Warning</span>
+                                    <span class="badge badge-outline-info badge-pill p-2 m-1">Info</span>
+                                    <span class="badge badge-outline-dark badge-pill p-2 m-1">Dark</span>
                                 </div>
                             </div>
-                        </div>
-
+                        </div> 
                     </div>
                     <div class="col-md-6 mt-4">
-                        <!-- Rounded button card -->
+                        <!-- Regular style badge -->
                         <div class="card rounded-lg">
-                            <div class="card-body">
-                                <div class="card-title">Rounded Buttons</div>
-                                <div class="buttons">
-                                    <button class="btn btn-primary rounded m-2">Primary</button>
-                                    <button class="btn btn-success rounded m-2">Success</button>
-                                    <button class="btn btn-danger rounded m-2">Danger</button>
-                                    <button class="btn btn-warning rounded m-2">Warning</button>
-                                    <button class="btn btn-info rounded m-2">Info</button>
-                                    <button class="btn btn-light rounded m-2">Light</button>
-                                    <button class="btn btn-dark rounded m-2">Dark</button>
+                            <div class="card-body mb-2">
+                                <div class="card-title">Regular Badges</div>
+                                <div class="badges">
+                                    <span class="badge m-1 badge-primary">Primary</span>
+                                    <span class="badge m-1 badge-secondary">Secondary</span>
+                                    <span class="badge m-1 badge-success">Success</span>
+                                    <span class="badge m-1 badge-danger">Danger</span>
+                                    <span class="badge m-1 badge-warning">Warning</span>
+                                    <span class="badge m-1 badge-info">Info</span>
+                                    <span class="badge m-1 badge-dark">Dark</span>
                                 </div>
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
                     <div class="col-md-6 mt-4">
-                        <!-- Raised button card -->
+                        <!-- Regular style badge with pill -->
                         <div class="card rounded-lg">
-                            <div class="card-body">
-                                <div class="card-title">Raised Buttons</div>
-                                <div class="buttons">
-                                    <button class="btn btn-raised btn-primary m-2">Primary</button>
-                                    <button class="btn btn-raised btn-success m-2">Success</button>
-                                    <button class="btn btn-raised btn-danger m-2">Danger</button>
-                                    <button class="btn btn-raised btn-warning m-2">Warning</button>
-                                    <button class="btn btn-raised btn-info m-2">Info</button>
-                                    <button class="btn btn-raised btn-light m-2">Light</button>
-                                    <button class="btn btn-raised btn-dark m-2">Dark</button>
+                            <div class="card-body mb-2">
+                                <div class="card-title">Badge Pill</div>
+                                <div class="badges">
+                                    <span class="badge m-1 badge-pill badge-primary">Primary</span>
+                                    <span class="badge m-1 badge-pill badge-secondary">Secondary</span>
+                                    <span class="badge m-1 badge-pill badge-success">Success</span>
+                                    <span class="badge m-1 badge-pill badge-danger">Danger</span>
+                                    <span class="badge m-1 badge-pill badge-warning">Warning</span>
+                                    <span class="badge m-1 badge-pill badge-info">Info</span>
+                                    <span class="badge m-1 badge-pill badge-dark">Dark</span>
                                 </div>
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
                     <div class="col-md-6 mt-4">
-                        <!-- Outline button card -->
+                        <!-- Ragular style badge with pill and padding -->
                         <div class="card rounded-lg">
                             <div class="card-body">
-                                <div class="card-title">Outline Buttons</div>
-                                <div class="buttons">
-                                    <button class="btn btn-outline-primary m-2">Primary</button>
-                                    <button class="btn btn-outline-success m-2">Success</button>
-                                    <button class="btn btn-outline-danger m-2">Danger</button>
-                                    <button class="btn btn-outline-warning m-2">Warning</button>
-                                    <button class="btn btn-outline-info m-2">Info</button>
-                                    <button class="btn btn-outline-light m-2">Light</button>
-                                    <button class="btn btn-outline-dark m-2">Dark</button>
+                                <div class="card-title">Badge Pill with padding</div>
+                                <div class="badges">
+                                    <span class="badge m-1 p-2 badge-pill badge-primary">Primary</span>
+                                    <span class="badge m-1 p-2 badge-pill badge-secondary">Secondary</span>
+                                    <span class="badge m-1 p-2 badge-pill badge-success">Success</span>
+                                    <span class="badge m-1 p-2 badge-pill badge-danger">Danger</span>
+                                    <span class="badge m-1 p-2 badge-pill badge-warning">Warning</span>
+                                    <span class="badge m-1 p-2 badge-pill badge-info">Info</span>
+                                    <span class="badge m-1 p-2 badge-pill badge-dark">Dark</span>
                                 </div>
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
                     <div class="col-md-6 mt-4">
-                        <!-- block button card -->
+                        <!-- Ragular style badge link -->
                         <div class="card rounded-lg">
-                            <div class="card-body">
-                                <div class="card-title">Block Buttons</div>
-                                <div class="buttons">
-                                    <button class="btn btn-primary btn-block m-2">Primary</button>
-                                    <button class="btn btn-success btn-block m-2">Success</button>
-                                    <button class="btn btn-warning btn-block m-2">Warning</button>
+                            <div class="card-body mb-2">
+                                <div class="card-title">Badges Link</div>
+                                <div class="badges">
+                                    <a href="#"><span class="badge m-1 badge-primary">Primary</span></a>
+                                    <a href="#"><span class="badge m-1 badge-secondary">Secondary</span></a>
+                                    <a href="#"><span class="badge m-1 badge-success">Success</span></a>
+                                    <a href="#"><span class="badge m-1 badge-danger">Danger</span></a>
+                                    <a href="#"><span class="badge m-1 badge-warning">Warning</span></a>
+                                    <a href="#"><span class="badge m-1 badge-info">Info</span></a>
+                                    <a href="#"><span class="badge m-1 badge-dark">Dark</span></a>
                                 </div>
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
+                    <div class="col-md-6 mt-4"></div>
                     <div class="col-md-6 mt-4">
-                        <!-- Large & Small Buttons button card -->
+                        <!-- Ragular style badge with pill and padding -->
                         <div class="card rounded-lg">
                             <div class="card-body">
-                                <div class="card-title">Large & Small Buttons Buttons</div>
-                                <div class="buttons">
-                                    <button class="btn btn-primary btn-sm m-2">Primary</button>
-                                    <button class="btn btn-success btn-sm m-2">Success</button>
-                                    <button class="btn btn-warning btn-sm m-2">Warning</button>
-                                    <br>
-                                    <button class="btn btn-primary m-2">Primary</button>
-                                    <button class="btn btn-success m-2">Success</button>
-                                    <button class="btn btn-warning m-2">Warning</button>
-                                    <br>
-                                    <button class="btn btn-primary btn-lg m-2">Primary</button>
-                                    <button class="btn btn-success btn-lg m-2">Success</button>
-                                    <button class="btn btn-warning btn-lg m-2">Warning</button>
+                                <div class="card-title">Sizing & Styles</div>
+                                <p class="text-muted small mt-4">Medium Size</p>
+                                <div class="badges ml-3">
+                                    <span class="badge m-1 badge-rounded-primary">P</span>
+                                    <span class="badge m-1 badge-rounded-success">S</span>
+                                    <span class="badge m-1 badge-rounded-danger">D</span>
+                                    <span class="badge m-1 badge-rounded-warning">W</span>
+                                    <span class="badge m-1 badge-rounded-info">I</span>
+                                    <span class="badge m-1 badge-rounded-dark">D</span>
+                                </div>
+                                <div class="badges mt-2 ml-3">
+                                    <span class="badge m-1 badge-square-primary">P</span>
+                                    <span class="badge m-1 badge-square-success">S</span>
+                                    <span class="badge m-1 badge-square-danger">D</span>
+                                    <span class="badge m-1 badge-square-warning">W</span>
+                                    <span class="badge m-1 badge-square-info">I</span>
+                                    <span class="badge m-1 badge-square-dark">D</span>
+                                </div>
+                                <p class="text-muted small mt-4">Large Size</p>
+                                <div class="badges ml-3">
+                                    <span class="badge m-1 badge-rounded-primary lg">P</span>
+                                    <span class="badge m-1 badge-rounded-success lg">S</span>
+                                    <span class="badge m-1 badge-rounded-danger lg">D</span>
+                                    <span class="badge m-1 badge-rounded-warning lg">W</span>
+                                    <span class="badge m-1 badge-rounded-info lg">I</span>
+                                    <span class="badge m-1 badge-rounded-dark lg">D</span>
+                                </div>
+                                <div class="badges mt-2 ml-3">
+                                    <span class="badge m-1 badge-square-primary lg">P</span>
+                                    <span class="badge m-1 badge-square-success lg">S</span>
+                                    <span class="badge m-1 badge-square-danger lg">D</span>
+                                    <span class="badge m-1 badge-square-warning lg">W</span>
+                                    <span class="badge m-1 badge-square-info lg">I</span>
+                                    <span class="badge m-1 badge-square-dark lg">D</span>
+                                </div>
+                                <p class="text-muted small mt-4">Extra Large Size</p>
+                                <div class="badges ml-3">
+                                    <span class="badge m-1 badge-rounded-primary xl">P</span>
+                                    <span class="badge m-1 badge-rounded-success xl">S</span>
+                                    <span class="badge m-1 badge-rounded-danger xl">D</span>
+                                    <span class="badge m-1 badge-rounded-warning xl">W</span>
+                                    <span class="badge m-1 badge-rounded-info xl">I</span>
+                                    <span class="badge m-1 badge-rounded-dark xl">D</span>
+                                </div>
+                                <div class="badges mt-2 ml-3">
+                                    <span class="badge m-1 badge-square-primary xl">P</span>
+                                    <span class="badge m-1 badge-square-success xl">S</span>
+                                    <span class="badge m-1 badge-square-danger xl">D</span>
+                                    <span class="badge m-1 badge-square-warning xl">W</span>
+                                    <span class="badge m-1 badge-square-info xl">I</span>
+                                    <span class="badge m-1 badge-square-dark xl">D</span>
                                 </div>
                             </div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-6 mt-4">
-                        <!-- Buttons group button card -->
-                        <div class="card rounded-lg">
-                            <div class="card-body">
-                                <div class="card-title">Button group</div>
-                                <div class="buttons">
-                                    <div class="btn-group">
-                                        <button class="btn btn-outline-dark">Left</button>
-                                        <button class="btn btn-outline-dark">Middle</button>
-                                        <button class="btn btn-outline-dark">Right</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-6 mt-4">
-                        <!-- Button with Icons card -->
-                        <div class="card rounded-lg">
-                            <div class="card-body">
-                                <div class="card-title">Button with Icons</div>
-                                <div class="buttons">
-                                    <button class="btn btn-primary m-2"><i class="fas fa-wifi"></i> Wifi</button>
-                                    <button class="btn btn-success m-2"><i class="fas fa-caret-up"></i> Up</button>
-                                    <button class="btn btn-warning m-2"><i class="fas fa-atom"></i> Atom</button>
-                                    <button class="btn btn-info m-2"><i class="fas fa-car"></i> Car</button>
-                                </div>
-                            </div>
-                        </div>
-                        
+                        </div> 
                     </div>
                 </div>
             </div>

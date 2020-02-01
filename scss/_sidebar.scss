@@ -9,6 +9,7 @@
     box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08);
     transition: all ease 0.5s;
     z-index: 99;
+    overflow: auto;
 }
 
 .side-bar-active{
@@ -72,8 +73,8 @@
     .side-sub-menu-item{
         a{
             border-left: 2px solid $side-menu!important;
-            padding-top: 0.25rem!important;
-            padding-bottom: 0.25rem!important;
+            padding-top: 0.50rem!important;
+            padding-bottom: 0.50rem!important;
         }
     }
     
