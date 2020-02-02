@@ -17,12 +17,13 @@ img{
     object-position: center!important;
 }
 
-@import "./pre-write";
-@import "./variable";
-@import "./custom-class";
-@import "./customize-bootstrap-ui";
-@import "./sidebar";
-@import "./navbar";
-@import "./notification";
-@import "./main-section";
-@import "./responsive";
+@import "./pre-write",
+        "./variable",
+        "./custom-class",
+        "./mixin",
+        "./customize-bootstrap-ui",
+        "./sidebar",
+        "./navbar",
+        "./notification",
+        "./main-section",
+        "./responsive";

@@ -148,8 +148,10 @@ textarea {
     display: table; /* 2 */
   }
   
-  .clearfix:after {
-    clear: both;
+  .clearfix {
+    &:after{
+        clear: both;
+    }
   }
 
   @media print,

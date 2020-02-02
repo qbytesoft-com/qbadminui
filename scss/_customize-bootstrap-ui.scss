@@ -2,24 +2,15 @@
 .dropdown-menu{
     margin: 0.125rem 1rem 0!important;
 }
-.text-primary {
-    color: $primary !important;
+@mixin text-color($name,$value) {
+    .text-#{$name}{
+        color: $value !important;
+    }
 }
-.text-success{
-    color: $success!important;
-}
-.text-warning{
-    color: $warning!important;
-}
-.text-info{
-    color: $info!important;
-}
-.text-danger {
-    color: $danger !important;
-}
-.badge-primary{
-    color: $white!important;
-    background-color: $primary!important;
+// text color
+$all-text-color : ("primary" : $primary, "success" : $success, "warning" : $warning, "info" : $info, "danger" : $danger);
+@each $name, $value in $all-text-color {
+    @include text-color($name,$value)
 }
 .dropdown-item.active, .dropdown-item:active {
     background-color: unset!important;
@@ -27,419 +18,173 @@
 .card{
     box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08)!important;
 }
-.badge-success {
-    background-color: $success!important;
+    // button
+    // bootstrap button mixin function
+@mixin bootstrap-btn($name,$color,$shadow) {
+    .#{$name}-btn{
+        @if $name == warning {
+            color: $dark!important;
+        }@else{
+            color: $white!important;
+        }
+        background: $color!important;
+        border-color: $color!important;
+    }
+    .#{$name}-btn-hover-focus{
+        box-shadow: 0 8px 25px -8px $color!important;
+    }
+    .btn-outline-#{$name} {
+        @extend .#{$name}-btn;
+        background: unset!important;
+        color: $color!important;
+    }
+    .btn-#{$name}{
+        @extend .#{$name}-btn;
+    }
+    .btn-#{$name}, .btn-outline-#{$name}{
+        &:hover{
+            @extend .#{$name}-btn;
+            @extend .#{$name}-btn-hover-focus;
+        }
+        
+    }
+    @if $name == warning {
+        .btn-outline-warning{
+            &:hover{
+                color: $white!important;
+            }
+        }
+    }
+    .btn-#{$name}, .btn-outline-#{$name} {
+        &:focus{
+            @extend .#{$name}-btn;
+            @extend .#{$name}-btn-hover-focus;
+        }
+        
+    }
+    .btn-outline-#{$name}{
+        &:focus{
+            @extend .btn-outline-#{$name};
+            @if $name == warning {
+                &:hover{
+                    color: $color!important;
+                }
+            }
+        }
+    }
+    .btn-#{$name}, .btn-outline-#{$name}{
+        &:active{
+            box-shadow: 0 0 0 0.2rem $shadow!important;
+        }
+    }
 }
-.badge-warning {
-    background-color: $warning!important;
-}
-.badge-info {
-    background-color: $info!important;
-}
-
-        // button
-/* Primary button edit */
-.btn-outline-primary {
-    color: $primary!important;
-    border-color: $primary!important;
-}
-.btn-primary{
-    border-color: $primary!important;
-    background: $primary!important;
-}
-.btn-primary:hover, .btn-outline-primary:hover,.btn-primary:active, .btn-outline-primary:active {
-    color: $white!important;
-    background: $primary!important;
-    border-color: $primary!important;
-    box-shadow: 0 8px 25px -8px $primary!important;
-}
-.btn-primary:focus, .btn-outline-primary:focus {
-    color: $white!important;
-    background: $primary!important;
-    box-shadow: 0 8px 25px -8px $primary!important;
-}
-.btn-primary:active:focus, .btn-outline-primary:active:focus{
-    color: $white!important;
-    border-color: $primary!important;
-    background: $primary!important;
-    box-shadow: 0 0 0 0.2rem $primary-shadow!important;
-}
-.btn-outline-primary:focus{
-    color: $primary!important;
-    background: unset!important;
-}
-.btn-primary:active, .btn-outline-primary:active{
-    box-shadow: 0 0 0 0.2rem $primary-shadow!important;
-}
-/* Success button edit */
-.btn-outline-success {
-    color: $success!important;
-    border-color:$success!important;
-}
-.btn-success{
-    border-color: $success!important;
-    background: $success!important;
-}
-.btn-success:hover, .btn-outline-success:hover,.btn-success:active, .btn-outline-success:active {
-    color: $white!important;
-    background: $success!important;
-    border-color: $success!important;
-    box-shadow: 0 8px 25px -8px $success!important;
-}
-.btn-success:focus, .btn-outline-success:focus {
-    color: $white!important;
-    background: $success!important;
-    box-shadow: 0 8px 25px -8px $success!important;
-}
-.btn-success:active:focus, .btn-outline-success:active:focus{
-    color: $white!important;
-    border-color: $success!important;
-    background: $success!important;
-    box-shadow: 0 0 0 0.2rem $success-shadow!important;
-}
-.btn-outline-success:focus {
-    color: $success!important;
-    background: unset!important;
-}
-.btn-success:active, .btn-outline-success:active{
-    box-shadow: 0 0 0 0.2rem $success-shadow!important;
-}
-/* Danger button edit */
-.btn-outline-danger {
-    color: $danger!important;
-    border-color:$danger!important;
-}
-.btn-danger{
-    border-color: $danger!important;
-    background: $danger!important;
-}
-.btn-danger:hover, .btn-outline-danger:hover,.btn-danger:active, .btn-outline-danger:active {
-    color: $white!important;
-    background: $danger!important;
-    border-color: $danger!important;
-    box-shadow: 0 8px 25px -8px $danger!important;
-}
-.btn-danger:focus, .btn-outline-danger:focus {
-    color: $white!important;
-    background: $danger!important;
-    box-shadow: 0 8px 25px -8px $danger!important;
-}
-.btn-danger:active:focus, .btn-outline-danger:active:focus{
-    color: $white!important;
-    background: $danger!important;
-    border-color: $danger!important;
-    box-shadow: 0 0 0 0.2rem $danger-shadow!important;
-}
-.btn-outline-danger:focus {
-    color: $danger!important;
-    background: unset!important;
-}
-.btn-danger:active, .btn-outline-danger:active{
-    box-shadow: 0 0 0 0.2rem $danger-shadow!important;
-}
-/* Warning button edit */
-.btn-outline-warning {
-    color: $warning!important;
-    border-color:$warning!important;
-}
-.btn-warning{
-    border-color: $warning!important;
-    background: $warning!important;
-}
-.btn-warning:hover, .btn-outline-warning:hover,.btn-warning:active, .btn-outline-warning:active {
-    background: $warning!important;
-    border-color: $warning!important;
-    box-shadow: 0 8px 25px -8px $warning!important;
-}
-.btn-outline-warning:hover,.btn-outline-warning:active {
-    color: $white!important;
-}
-.btn-warning:focus, .btn-outline-warning:focus {
-    background: $warning!important;
-    box-shadow: 0 8px 25px -8px $warning!important;
-}
-.btn-warning:active:focus, .btn-outline-warning:active:focus{
-    background: $warning!important;
-    border-color: $warning!important;
-    box-shadow: 0 0 0 0.2rem $warning-shadow!important;
-}
-.btn-outline-warning:active:focus{
-    color: #212529!important;
-}
-.btn-outline-warning:focus {
-    color: $warning!important;
-    background: unset!important;
-}
-.btn-warning:active, .btn-outline-warning:active{
-    box-shadow: 0 0 0 0.2rem $warning-shadow!important;
-}
-/* Info button edit */
-.btn-outline-info {
-    color: $info!important;
-    border-color:$info!important;
-}
-.btn-info{
-    border-color: $info!important;
-    background: $info!important;
-}
-.btn-info:hover, .btn-outline-info:hover,.btn-info:active, .btn-outline-info:active {
-    color: $white!important;
-    background: $info!important;
-    border-color: $info!important;
-    box-shadow: 0 8px 25px -8px $info!important;
-}
-.btn-info:focus, .btn-outline-info:focus {
-    color: $white!important;
-    background: $info!important;
-    box-shadow: 0 8px 25px -8px $info!important;
-}
-.btn-info:active:focus, .btn-outline-info:active:focus{
-    color: $white!important;
-    background: $info!important;
-    border-color: $info!important;
-    box-shadow: 0 0 0 0.2rem $info-shadow!important;
-}
-.btn-outline-info:focus {
-    color: $info!important;
-    background: unset!important;
-}
-.btn-info:active, .btn-outline-info:active{
-    box-shadow: 0 0 0 0.2rem $info-shadow!important;
-}
-/* Light button edit */
-.btn-outline-light {
-    color: $light!important;
-    border-color:$light!important;
-}
-.btn-light{
-    border-color: $light!important;
-    background: $light!important;
-}
-.btn-light:hover, .btn-outline-light:hover,.btn-light:active, .btn-outline-light:active {
-    color: $btn-light-text!important;
-    background: $light!important;
-    border-color: $light!important;
-    box-shadow: 0 8px 25px -8px $light!important;
-}
-.btn-light:focus, .btn-outline-light:focus {
-    color: $btn-light-text!important;
-    background: $light!important;
-    box-shadow: 0 8px 25px -8px $light!important;
-}
-.btn-light:active:focus, .btn-outline-light:active:focus{
-    color: $btn-light-text!important;
-    background: $light!important;
-    border-color: $light!important;
-    box-shadow: 0 0 0 0.2rem $light-shadow!important;
-}
-.btn-outline-light:focus {
-    color: $btn-light-text!important;
-    background: unset!important;
-}
-.btn-light:active, .btn-outline-light:active{
-    box-shadow: 0 0 0 0.2rem $light-shadow!important;
-}
-/* Dark button edit */
-.btn-outline-dark {
-    color: $dark!important;
-    border-color:$dark!important;
-}
-.btn-dark{
-    border-color: $dark!important;
-    background: $dark!important;
-}
-.btn-dark:hover, .btn-outline-dark:hover,.btn-dark:active, .btn-outline-dark:active {
-    color: $white!important;
-    background: $dark!important;
-    border-color: $dark!important;
-    box-shadow: 0 8px 25px -8px $dark!important;
-}
-.btn-dark:focus, .btn-outline-dark:focus {
-    color: $white!important;
-    background: $dark!important;
-    box-shadow: 0 8px 25px -8px $dark!important;
-}
-.btn-dark:active:focus, .btn-outline-dark:active:focus{
-    color: $white!important;
-    background: $dark!important;
-    border-color: $dark!important;
-    box-shadow: 0 0 0 0.2rem $dark-shadow!important;
-}
-.btn-outline-dark:focus {
-    color: $btn-light-text!important;
-    background: unset!important;
-}
-.btn-dark:active, .btn-outline-dark:active{
-    box-shadow: 0 0 0 0.2rem $dark-shadow!important;
+$all-bootstrap-btn:
+  "primary" $primary $primary-shadow,
+  "success" $success $success-shadow,
+  "danger" $danger $danger-shadow,
+  "warning" $warning $warning-shadow,
+  "info" $info $info-shadow,
+  "light" $light $light-shadow,
+  "dark" $dark $dark-shadow;
+  // all btn style
+@each $name, $btn-color, $btn-shadow in $all-bootstrap-btn {
+    @include bootstrap-btn($name,$btn-color,$btn-shadow);
 }
 /* Button raised */
-.btn-raised,.btn-raised:active:focus,.btn-raised:hover,.btn-raised:focus{
-    box-shadow: unset!important;
+.btn-raised,.btn-raised,.btn-raised{
+    &:hover,&:focus{
+        box-shadow: unset!important;
+    }
 }
-
         // Alert
 .alert{
     border-radius: 0.8rem!important;
 }
+@mixin bootstrap-alert($name,$bg,$color,$border) {
+    .alert-#{$name}{
+        background: $bg!important;
+        color: $color!important;
+        border-color: $border!important;
+    }
+}
 // Primary alert
-.alert-primary{
-    background: $alert-primary-bg!important;
-    color: $alert-primary-text!important;
-    border-color: $alert-primary-border!important;
-}
-
+@include bootstrap-alert("primary",$alert-primary-bg,$alert-primary-text,$alert-primary-border);
 // Success alert
-.alert-success{
-    background: $alert-success-bg!important;
-    color: $alert-success-text!important;
-    border-color: $alert-success-border!important;
-}
-
+@include bootstrap-alert("success",$alert-success-bg,$alert-success-text,$alert-success-border);
 // Info alert
-.alert-info{
-    background: $alert-info-bg!important;
-    color: $alert-info-text!important;
-    border-color: $alert-info-border!important;
-}
-
+@include bootstrap-alert("info",$alert-info-bg,$alert-info-text,$alert-info-border);
 // Warning alert
-.alert-warning{
-    background: $alert-warning-bg!important;
-    color: $alert-warning-text!important;
-    border-color: $alert-warning-border!important;
-}
-
+@include bootstrap-alert("warning",$alert-warning-bg,$alert-warning-text,$alert-warning-border);
 // Danger alert
-.alert-danger{
-    background: $alert-danger-bg!important;
-    color: $alert-danger-text!important;
-    border-color: $alert-danger-border!important;
-}
-
+@include bootstrap-alert("danger",$alert-danger-bg,$alert-danger-text,$alert-danger-border);
 button.close{
     position: absolute;
     top: 0;
     right: 0.5rem;
 }
-
 // Badge
+$all-badge : ("primary" : $primary, "secondary" : $secondary, "success" : $success, "danger" : $danger, "warning" : $warning, "info" : $info, "dark" : $dark);
 .badge{
     font-weight: 400;
 }
+// All badge bg
+@each $name, $color in $all-badge {
+    .badge-#{$name},.badge-rounded-#{$name},.badge-square-#{$name} {
+        background-color: $color!important;
+    }
+}
 // badge outline
-.badge-outline-primary{
-    @extend .background-none;
-    border: 1px solid $primary;
-    color: $primary;
+    // badge outline function
+@mixin badge-outline($name, $value, $color) {
+    .badge-outline-#{$name}{
+        @extend .background-none;
+        border : $value solid $color;
+        color: $color;
+    }
 }
-.badge-outline-secondary{
-    @extend .background-none;
-    border: 1px solid $secondary;
-    color: $secondary;
-}
-.badge-outline-success{
-    @extend .background-none;
-    border: 1px solid $success;
-    color: $success;
-}
-.badge-outline-danger{
-    @extend .background-none;
-    border: 1px solid $danger;
-    color: $danger;
-}
-.badge-outline-warning{
-    @extend .background-none;
-    border: 1px solid $warning;
-    color: $warning;
-}
-.badge-outline-info{
-    @extend .background-none;
-    border: 1px solid $info;
-    color: $info;
-}
-.badge-outline-dark{
-    @extend .background-none;
-    border: 1px solid $dark;
-    color: $dark;
+// all badge outline
+@each $badge-name, $badge-color in $all-badge {
+    @include badge-outline($badge-name,1px,$badge-color);
 }
 // end badge outline
 // Badge rounded
-.badge-rounded{
-    border-radius: 50%;
+@mixin badge-style($style,$width-height,$line-height) {
+    @if $style == rounded {
+        border-radius: 50%;
+    }@else if $style == squares{
+        border-radius: 20%;
+    }
     color: $white;
     justify-content: center;
+    width: $width-height;
+    height: $width-height;
+    line-height: $line-height;
+    @if $width-height > 50px {
+        font-size: 1rem;
+    }
 }
-.badge-rounded-sm{
-    @extend .badge-rounded;
-    width: 25px;
-    height: 25px;
-    line-height: 20px;
-}
-.badge-rounded-lg{
-    @extend .badge-rounded;
-    width: 40px;
-    height: 40px;
-    line-height: 35px;
-}
-.badge-rounded-xl{
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    font-size: 1rem;
-}
+    //sm
 .badge-rounded-primary,.badge-rounded-success,.badge-rounded-danger,.badge-rounded-warning,.badge-rounded-info,.badge-rounded-dark{
-    @extend .badge-rounded-sm;
+    @include badge-style("rounded",25px,20px);
 }
     // lg
-
 .badge-rounded-primary.lg,.badge-rounded-success.lg,.badge-rounded-danger.lg,.badge-rounded-warning.lg,.badge-rounded-info.lg,.badge-rounded-dark.lg{
-    @extend .badge-rounded-lg;
+    @include badge-style("rounded",40px,35px);
+}
+    //xl
+.badge-rounded-primary.xl,.badge-rounded-success.xl,.badge-rounded-danger.xl,.badge-rounded-warning.xl,.badge-rounded-info.xl,.badge-rounded-dark.xl{
+    @include badge-style("rounded",50px,45px);
 }
 // Badge squary
-.badge-square{
-    border-radius: 20%;
-    color: $white;
-    justify-content: center;
-    
-}
-.badge-square-sm{
-    @extend .badge-square;
-    width: 25px;
-    height: 25px;
-    line-height: 20px;
-}
-.badge-square-lg{
-    @extend .badge-square;
-    width: 40px;
-    height: 40px;
-    line-height: 35px;
-}
+    // sm
 .badge-square-primary,.badge-square-success,.badge-square-danger,.badge-square-warning,.badge-square-info,.badge-square-dark{
-    @extend .badge-square-sm;
+    @include badge-style("squares",25px,20px);
 }
     //lg
 .badge-square-primary.lg,.badge-square-success.lg,.badge-square-danger.lg,.badge-square-warning.lg,.badge-square-info.lg,.badge-square-dark.lg{
-    @extend .badge-square-lg;
+    @include badge-style("squares",40px,35px);
 }
     // Xl
-.badge-square-primary.xl,.badge-square-success.xl,.badge-square-danger.xl,.badge-square-warning.xl,.badge-square-info.xl,.badge-square-dark.xl,.badge-rounded-primary.xl,.badge-rounded-success.xl,.badge-rounded-danger.xl,.badge-rounded-warning.xl,.badge-rounded-info.xl,.badge-rounded-dark.xl{
-    @extend .badge-rounded-xl;
-}
-    // badge bg
-.badge-rounded-primary,.badge-square-primary{
-    background: $primary;
-}
-.badge-rounded-success,.badge-square-success{
-    background: $success;
-}.badge-rounded-danger,.badge-square-danger{
-    background: $danger;
-}
-.badge-rounded-warning,.badge-square-warning{
-    background: $warning;
-}
-.badge-rounded-info,.badge-square-info{
-    background: $info;
-}
-.badge-rounded-dark,.badge-square-dark{
-    background: $dark;
+.badge-square-primary.xl,.badge-square-success.xl,.badge-square-danger.xl,.badge-square-warning.xl,.badge-square-info.xl,.badge-square-dark.xl{
+    @include badge-style("squares",50px,45px);
 }

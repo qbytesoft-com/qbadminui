@@ -34,21 +34,25 @@
 .side-menu{
     list-style: none!important;
 }
-.side-menu {
-    .side-menu-item:hover{
+.side-menu-item{
+    &:hover{
         background: $side-menu!important;
     }
+    
 }
-.side-menu,.side-sub-menu{
-    .side-menu-item a,.side-sub-menu-item a{
+
+.side-menu-item,.side-sub-menu-item{
+    a{
         display: block;
         color: $white!important;
         transition: all ease 0.3s;
         position: relative!important;
     }
+    
 }
-.side-menu{
-    .side-menu-item a::after{
+
+.side-menu-item a{
+    &::after{
         content: "";
         width: 0.6rem;
         height: 0.6rem;
@@ -61,23 +65,24 @@
     
 }
 .side-menu-item{
-    a:hover{
-        padding-left: 2rem!important;
+    a{
+        &:hover{
+            padding-left: 2rem!important;
+        }
     }
-    
 }
 .side-sub-menu{
     list-style: none;
 }
-.side-sub-menu {
-    .side-sub-menu-item{
-        a{
-            border-left: 2px solid $side-menu!important;
-            padding-top: 0.50rem!important;
-            padding-bottom: 0.50rem!important;
+
+.side-sub-menu-item{
+    a{
+        border-left: 2px solid $side-menu!important;
+        padding : {
+            top: 0.50rem!important;
+            bottom: 0.50rem!important;;
         }
     }
-    
 }
 .side-sub-menu {
     .side-sub-menu-item {
@@ -89,12 +94,14 @@
 .sub-menu-parent{
     position: relative!important;
 }
-.sub-menu-parent::before{
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f107";
-    color: $white;
-    position: absolute;
-    top: 1rem;
-    right: 0;
+.sub-menu-parent{
+    &::before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f107";
+        color: $white;
+        position: absolute;
+        top: 1rem;
+        right: 0;
+    }
 }
