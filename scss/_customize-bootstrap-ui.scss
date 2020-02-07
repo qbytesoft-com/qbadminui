@@ -78,6 +78,7 @@ $all-text-color : ("primary" : $primary, "success" : $success, "warning" : $warn
         }
     }
 }
+// All button list
 $all-bootstrap-btn:
   "primary" $primary $primary-shadow,
   "success" $success $success-shadow,
@@ -85,8 +86,15 @@ $all-bootstrap-btn:
   "warning" $warning $warning-shadow,
   "info" $info $info-shadow,
   "light" $light $light-shadow,
-  "dark" $dark $dark-shadow;
-  // all btn style
+  "dark" $dark $dark-shadow,
+  "facebook" $facebook-icon,
+  "google" $google-plus-icon,
+  "twitter" $twitter-icon,
+  "instagram" $instagram-icon,
+  "linkedin" $linkedin-icon,
+  "dribble" $dribble-icon,
+  "youtube" $youtube-icon;
+// All btn style
 @each $name, $btn-color, $btn-shadow in $all-bootstrap-btn {
     @include bootstrap-btn($name,$btn-color,$btn-shadow);
 }
@@ -95,6 +103,11 @@ $all-bootstrap-btn:
     &:hover,&:focus{
         box-shadow: unset!important;
     }
+}
+.btn-icon.rounded-circle{
+    width: 50px;
+    height: 50px;
+    text-align: center;
 }
         // Alert
 .alert{
@@ -187,4 +200,12 @@ $all-badge : ("primary" : $primary, "secondary" : $secondary, "success" : $succe
     // Xl
 .badge-square-primary.xl,.badge-square-success.xl,.badge-square-danger.xl,.badge-square-warning.xl,.badge-square-info.xl,.badge-square-dark.xl{
     @include badge-style("squares",50px,45px);
+}
+
+// Tab component
+.nav-pills{
+    .nav-link.active,.show > .nav-link{
+        color: $white!important;
+        background-color: $primary!important;
+    }
 }

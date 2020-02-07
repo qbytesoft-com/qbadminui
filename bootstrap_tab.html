@@ -1,0 +1,436 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap tab page | qbytAdmin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/new/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="position-relative">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="container-fluid px-0">
+        <!-- The side bar -->
+        <div class="side-bar bg-primary-c">
+            <div class="side-menu-brand d-flex flex-row justify-content-center clear mt-3">
+                <img src="img/QbyteIcon.png" alt="bran_name" class="brand-img">
+                <a href="#" class="brand-name mt-2 ml-2 font-weight-bold text-light">qbytAdmin</a>
+            </div>
+            <!-- Side bar menu -->
+            <div class="the_menu mt-5">
+                <h6 class="side-menu-heading font-weight-bold pb-2 mx-3">Main Menu</h6>
+                <!-- Menu item -->
+                <div id="accordion">
+                    <ul class="side-menu p-0 m-0 mt-3">
+                        <li class="side-menu-item px-3"><a href="index.html" class="w-100 py-3 pl-4">Dashboard</a></li>
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#sub_menu_1" aria-expanded="false" aria-controls="sub_menu_1">Basic UI Elements</a></li>
+                        <!-- Sub menu -->
+                        <div id="sub_menu_1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="alert.html" class="w-100 pl-4 small">Alert</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="accordion.html" class="w-100 pl-4 small">Accordion</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="badge.html" class="w-100 pl-4 small">Badge</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="button.html" class="w-100 pl-4 small">Button</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="bootstrap_tab.html" class="w-100 pl-4 small">Bootstrap tab</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="cards.html" class="w-100 pl-4 small">Cards</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="carousels.html" class="w-100 pl-4 small">Carousels</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Dropdown</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="list.html" class="w-100 pl-4 small">Llist</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="paginations.html" class="w-100 pl-4 small">Paginations</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="progressbar.html" class="w-100 pl-4 small">Progressbar</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="tooltip.html" class="w-100 pl-4 small">Tooltip</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Typography</a></li>
+                            </ul>
+                        </div>
+
+
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Form Elements</a></li>
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Charts</a></li>
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Tables</a></li>
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Icons</a></li>
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#sub_menu_2" aria-expanded="true" aria-controls="sub_menu_2">ChUser Pages</a></li>
+                        <!-- Sub menu -->
+                        <div id="sub_menu_2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="blank.html" class="w-100 pl-4 small">Blank Page</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Login</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Register</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">404</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">500</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Main section -->
+        <main class="bg-light">
+            <!-- The navbar -->
+            <nav class="navbar navbar-expand navbar-light bg-light py-3">
+                <p class="navbar-brand mb-0 pb-0 d-md-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
+                <!-- Navbar search section -->
+                <div class="navb-search ml-5 d-none d-md-block">
+                    <form action="#" method="POST">
+                        <div class="input-group search-round">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <div class="input-group-append">
+                                <button class="btn border" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Navbar right menu section -->
+                <div class="navb-menu ml-auto d-flex flex-row">
+                    <!-- Message dropdown -->
+                    <div class="dropdown dropdown-arow-none d-contents text-center mx-2 pt-1">
+                        <!-- Icon -->
+                        <a href="#" class="w-100 dropdown-toggle text-muted position-relative" data-toggle="dropdown">
+                            <i class="far fa-envelope fa-lg"></i>
+                            <span class="badge badge-danger position-absolute notification-badge">3</span>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-max-height p-0">
+                            <!-- Dropdown item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <!-- Profile image -->
+                                    <div class="notification-icon bg-secondary-c pt-3"><img src="img/profile.jpg" alt="img" class="w-75 img-round"></div>
+                                    <!-- Message notification -->
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">James <span class="badge badge-pill badge-primary">1</span></p>
+                                        <small>James : Hey! Are you busy?</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Dropdown item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <!-- Profile image -->
+                                    <div class="notification-icon bg-secondary-c pt-3"><img src="img/profile.jpg" alt="img" class="w-75 img-round"></div>
+                                    <!-- Message notification -->
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">Jhone <span class="badge badge-pill badge-primary">1</span></p>
+                                        <small>Jhone : Hey! I need help.</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Dropdown item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <!-- Profile image -->
+                                    <div class="notification-icon bg-secondary-c pt-3"><img src="img/profile.jpg" alt="img" class="w-75 img-round"></div>
+                                    <!-- Message notification -->
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">Mariam <span class="badge badge-pill badge-primary">1</span></p>
+                                        <small>Mariam : information</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Notification dropdown -->
+                    <div class="dropdown dropdown-arow-none d-contents text-center mx-2 pt-1">
+                        <!-- icon -->
+                        <a href="#" class="w-100 dropdown-toggle text-muted position-relative" data-toggle="dropdown">
+                            <i class="far fa-bell fa-lg"></i>
+                            <span class="badge badge-primary position-absolute notification-badge">3</span>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu dropdown-menu-right p-0 dropdown-menu-max-height">
+                            <!-- Menu item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <div class="notification-icon bg-secondary-c pt-3 px-3"><i class="far fa-envelope text-primary fa-lg"></i></div>
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">New message <span class="badge badge-pill badge-primary">New</span></p>
+                                        <small>James : Hey! Are you busy?</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Menu item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <div class="notification-icon bg-secondary-c pt-3 px-3"><i class="fas fa-clipboard-list text-success fa-lg"></i></div>
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="m-0">New order received <span class="badge badge-pill badge-success">New</span></p>
+                                        <small>3 iPhone x</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Menu item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0 pr-2">
+                                <div class="d-flex flex-row border-bottom">
+                                    <div class="notification-icon bg-secondary-c pt-3 px-3"><i class="fas fa-box-open text-warning fa-lg"></i></div>
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="m-0">Product out of stock <span class="badge badge-pill badge-warning small">1</span></p>
+                                        <small>Headphone E63</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Profile action dropdown -->
+                    <div class="dropdown dropdown-arow-none d-contents text-center mx-2">
+                        <!-- Icon -->
+                        <a href="#" class="w-100 dropdown-toggle text-muted" data-toggle="dropdown"><img src="img/profile.jpg" alt="profile" class="profile-avatar"></a>
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-max-height">
+                            <!-- Menu items -->
+                            <a href="#" class="dropdown-item disabled small"><i class="far fa-user mr-1"></i> Md.Maruf Ahmed</a>
+                            <a href="#" class="dropdown-item text-secondary-light">Account setting</a>
+                            <a href="#" class="dropdown-item text-secondary-light">Billing history</a>
+                            <a href="#" class="dropdown-item text-secondary-light">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            
+            <!--Page Body part -->
+            <div class="page-body p-4 text-dark">
+                <div class="page-heading border-bottom d-flex flex-row">
+                    <h5 class="font-weight-normal">Bootstrap Tab</h5>
+                    <small class="mt-2 ml-2">UI elements</small>
+                </div>
+                <!-- All tab element  -->
+                <div class="row mt-4">
+                    <!-- Left side -->
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 mt-4">
+                                <!-- Basic tabs card -->
+                                <div class="card rounded-lg">
+                                    <div class="card-body">
+                                        <div class="card-title">Basic Tabs</div>
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                            </li>
+                                            <li class="nav-item">
+                                            <a class="nav-link" id="content-tab" data-toggle="tab" href="#content" role="tab" aria-controls="content" aria-selected="false">Content</a>
+                                            </li>
+                                        </ul>
+                                        
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, libero culpa! Voluptas, veniam tenetur. Consequuntur dicta esse perspiciatis qui? Repellat ducimus aliquam doloribus saepe natus modi a nihil perferendis praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minima accusantium ratione molestias ipsum assumenda quo beatae nemo soluta, porro, a eaque. Exercitationem numquam dolorem repellendus perferendis, similique nam quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis, voluptate saepe sed perferendis est, ad voluptatem aspernatur aliquid animi distinctio possimus aut labore dolore laboriosam nemo earum autem adipisci!</p>
+                                            </div>
+                                            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, libero culpa! Voluptas, veniam tenetur. Consequuntur dicta esse perspiciatis qui? Repellat ducimus aliquam doloribus saepe natus modi a nihil perferendis praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, natus in quam, modi consequuntur tenetur doloribus repellat debitis eum iste nisi eveniet similique! Ut repudiandae voluptatum laboriosam sed possimus perferendis.</p>
+                                            </div>
+                                            <div class="tab-pane" id="content" role="tabpanel" aria-labelledby="content-tab">
+                                                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, libero culpa! Voluptas, veniam tenetur. Consequuntur dicta esse perspiciatis qui? Repellat ducimus aliquam doloribus saepe natus modi a nihil perferendis praesentium!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <!-- Dropdown tab -->
+                                <div class="card rounded-lg">
+                                    <div class="card-body">
+                                        <div class="card-title">Dropdown Tabs</div>
+                                        <!-- Tab nav -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#">Active</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                                <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Link</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Disabled</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Tab Content -->
+                                        <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, libero culpa! Voluptas, veniam tenetur. Consequuntur dicta esse perspiciatis qui? Repellat ducimus aliquam doloribus saepe natus modi a nihil perferendis praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minima accusantium ratione molestias ipsum assumenda quo beatae nemo soluta, porro, a eaque. Exercitationem numquam dolorem repellendus perferendis, similique nam quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis, voluptate saepe sed perferendis est, ad voluptatem aspernatur aliquid animi distinctio possimus aut labore dolore laboriosam nemo earum autem adipisci!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <!-- Dropdown tab with Icon-->
+                                <div class="card rounded-lg">
+                                    <div class="card-body">
+                                        <div class="card-title">Dropdown Tabs with Icon</div>
+                                        <!-- Tab nav -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#"><i class="far fa-circle"></i> Active</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-download"></i> Dropdown</a>
+                                                <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"><i class="fas fa-link"></i> Link</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#"><i class="far fa-file-alt"></i> Disabled</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Tab Content -->
+                                        <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, libero culpa! Voluptas, veniam tenetur. Consequuntur dicta esse perspiciatis qui? Repellat ducimus aliquam doloribus saepe natus modi a nihil perferendis praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minima accusantium ratione molestias ipsum assumenda quo beatae nemo soluta, porro, a eaque. Exercitationem numquam dolorem repellendus perferendis, similique nam quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis, voluptate saepe sed perferendis est, ad voluptatem aspernatur aliquid animi distinctio possimus aut labore dolore laboriosam nemo earum autem adipisci!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right side -->
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 mt-4">
+                                <!-- Pills Tab-->
+                                <div class="card rounded-lg">
+                                    <div class="card-body">
+                                        <div class="card-title">Pills</div>
+                                        <!-- Tab nav -->
+                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Tab content -->
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, libero culpa! Voluptas, veniam tenetur. Consequuntur dicta esse perspiciatis qui? Repellat ducimus aliquam doloribus saepe natus modi a nihil perferendis praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minima accusantium ratione molestias ipsum assumenda quo beatae nemo soluta, porro, a eaque. Exercitationem numquam dolorem repellendus perferendis, similique nam quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis, voluptate saepe sed perferendis est, ad voluptatem aspernatur aliquid animi distinctio possimus aut labore dolore laboriosam nemo earum autem adipisci!</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, libero culpa! Voluptas, veniam tenetur. Consequuntur dicta esse perspiciatis qui? Repellat ducimus aliquam doloribus saepe natus modi a nihil perferendis praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, natus in quam, modi consequuntur tenetur doloribus repellat debitis eum iste nisi eveniet similique! Ut repudiandae voluptatum laboriosam sed possimus perferendis.</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, libero culpa! Voluptas, veniam tenetur. Consequuntur dicta esse perspiciatis qui? Repellat ducimus aliquam doloribus saepe natus modi a nihil perferendis praesentium!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <!-- Pills tab with dropdown -->
+                                <div class="card rounded-lg">
+                                    <div class="card-body">
+                                        <div class="card-title">Dropdown Pills Tabs</div>
+                                        <!-- Nav link -->
+                                        <ul class="nav nav-pills">
+                                            <li class="nav-item">
+                                                <a class="nav-link active mx-2" href="#">Active</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Link</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Disabled</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Content -->
+                                        <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, libero culpa! Voluptas, veniam tenetur. Consequuntur dicta esse perspiciatis qui? Repellat ducimus aliquam doloribus saepe natus modi a nihil perferendis praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minima accusantium ratione molestias ipsum assumenda quo beatae nemo soluta, porro, a eaque. Exercitationem numquam dolorem repellendus perferendis, similique nam quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis, voluptate saepe sed perferendis est, ad voluptatem aspernatur aliquid animi distinctio possimus aut labore dolore laboriosam nemo earum autem adipisci!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <!-- Pills tab with dropdown and Icon -->
+                                <div class="card rounded-lg">
+                                    <div class="card-body">
+                                        <div class="card-title">Pills Icon Tabs</div>
+                                        <!-- Nav link -->
+                                        <ul class="nav nav-pills">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#"><i class="far fa-circle"></i> Active</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-download"></i> Dropdown</a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"><i class="fas fa-link"></i>  Link</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#"><i class="far fa-file-alt"></i> Disabled</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Content -->
+                                        <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, libero culpa! Voluptas, veniam tenetur. Consequuntur dicta esse perspiciatis qui? Repellat ducimus aliquam doloribus saepe natus modi a nihil perferendis praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minima accusantium ratione molestias ipsum assumenda quo beatae nemo soluta, porro, a eaque. Exercitationem numquam dolorem repellendus perferendis, similique nam quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis, voluptate saepe sed perferendis est, ad voluptatem aspernatur aliquid animi distinctio possimus aut labore dolore laboriosam nemo earum autem adipisci!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+  </div>
+  
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
