@@ -19,13 +19,13 @@
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-
+    
   <div class="container-fluid px-0">
         <!-- The side bar -->
-        <div class="side-bar bg-primary-c">
+        <div class="side-bar" data-theme="purple">
             <div class="side-menu-brand d-flex flex-row justify-content-center clear mt-3">
                 <img src="img/QbyteIcon.png" alt="bran_name" class="brand-img">
-                <a href="#" class="brand-name mt-2 ml-2 font-weight-bold text-light">qbytAdmin</a>
+                <a href="#" class="brand-name mt-2 ml-2 font-weight-bold ">qbytAdmin</a>
             </div>
             <!-- Side bar menu -->
             <div class="the_menu mt-5">
@@ -78,6 +78,20 @@
         </div>
         <!-- Main section -->
         <main class="bg-light">
+
+
+        <!-- Theme changer -->
+        <div class="theme-option position-absolute p-4">
+            <div class="theme-pck">
+                <i class="fas fa-cog"></i>
+            </div>
+            <p>Navbar:</p>
+            <div class="side-nav-themes d-flex flex-row">
+                <p class="p-3 rounded bg-primary-c side-nav-theme" theme-color="purple"></p>
+                <p class="p-3 rounded ml-2 bg-light side-nav-theme" theme-color="light"></p>
+            </div>
+        </div>
+
             <!-- The navbar -->
             <nav class="navbar navbar-expand navbar-light bg-light py-3">
                 <p class="navbar-brand mb-0 pb-0 d-md-none">

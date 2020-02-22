@@ -4,7 +4,7 @@
 }
 @mixin text-color($name,$value) {
     .text-#{$name}{
-        color: $value !important;
+        color: $value!important;
     }
 }
 // text color
@@ -17,6 +17,7 @@ $all-text-color : ("primary" : $primary, "success" : $success, "warning" : $warn
 }
 .card{
     box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08)!important;
+    overflow: hidden!important;
 }
     // button
     // bootstrap button mixin function

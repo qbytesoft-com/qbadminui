@@ -1,5 +1,6 @@
 /* The sidebar */
 .side-bar{
+    background: $bg-primary-c;
     height: 100vh!important;
     width: 17rem!important;
     visibility: hidden;
@@ -10,6 +11,94 @@
     transition: all ease 0.5s;
     z-index: 99;
     overflow: auto;
+    & .brand-name{
+        color: $dark!important;
+        font-size: 1.5rem;
+    }
+    & .brand-img{
+        width: 20%;
+    }
+    & .side-menu-heading{
+        color: $white!important;
+        border-bottom: 1px solid $white!important;
+    }
+    & .the_menu{
+        padding-bottom: 5rem!important;
+    }
+    & .side-menu{
+        list-style: none!important;
+    }
+    & .side-menu-item{
+        &:hover{
+            background: $side-menu!important;
+        }
+        
+    }
+    
+    & .side-menu-item,.side-sub-menu-item{
+        a{
+            display: block;
+            color: $white!important;
+            transition: all ease 0.3s;
+            position: relative!important;
+        }
+        
+    }
+    
+    & .side-menu-item a{
+        &::after{
+            content: "";
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            border:2px solid $white;
+            position: absolute;
+            top: 1.5rem;
+            left: 0;
+        }
+        
+    }
+    & .side-menu-item{
+        a{
+            &:hover{
+                padding-left: 2rem!important;
+            }
+        }
+    }
+    & .side-sub-menu{
+        list-style: none;
+    }
+    
+    & .side-sub-menu-item{
+        a{
+            border-left: 2px solid $side-menu!important;
+            padding : {
+                top: 0.50rem!important;
+                bottom: 0.50rem!important;;
+            }
+        }
+    }
+    & .side-sub-menu {
+        .side-sub-menu-item {
+            a:hover{
+                border-color: $white!important;
+            }
+        }
+    }
+    & .sub-menu-parent{
+        position: relative!important;
+    }
+    & .sub-menu-parent{
+        &::before{
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f107";
+            color: $white;
+            position: absolute;
+            top: 1rem;
+            right: 0;
+        }
+    }
 }
 
 .side-bar-active{
@@ -18,90 +107,56 @@
     left: 0;
     overflow: auto;
 }
-.brand-img{
-    width: 20%;
-}
-.brand-name{
-    font-size: 1.5rem;
-}
-.side-menu-heading{
-    color: $white!important;
-    border-bottom: 1px solid $white!important;
-}
-.the_menu{
-    padding-bottom: 5rem!important;
-}
-.side-menu{
-    list-style: none!important;
-}
-.side-menu-item{
-    &:hover{
-        background: $side-menu!important;
-    }
-    
-}
 
-.side-menu-item,.side-sub-menu-item{
-    a{
-        display: block;
-        color: $white!important;
-        transition: all ease 0.3s;
-        position: relative!important;
-    }
-    
-}
 
-.side-menu-item a{
-    &::after{
-        content: "";
-        width: 0.6rem;
-        height: 0.6rem;
-        border-radius: 50%;
-        border:2px solid $white;
-        position: absolute;
-        top: 1.5rem;
-        left: 0;
+
+// Sidebar light theme
+.side-bar[data-theme="light"]{
+    &{
+        background: $white!important;
     }
-    
-}
-.side-menu-item{
-    a{
+    & .brand-name{
+        color: $dark!important;
+    }
+    & .side-menu-heading{
+        color: $dark!important;
+        border-bottom: 1px solid $dark!important;
+    }
+    & .side-menu-item{
         &:hover{
-            padding-left: 2rem!important;
+            background: unset!important;
+        }
+        
+    }
+    & .side-menu-item,.side-sub-menu-item{
+        a{
+            color: $dark!important;
+            transition: all ease 0.3s;
+        }
+        
+    }
+    & .side-menu-item a{
+        &::after{
+            border:2px solid $dark;
+        }
+        
+    }
+    & .side-sub-menu-item{
+        a{
+            border-left: 2px solid $white!important;
         }
     }
-}
-.side-sub-menu{
-    list-style: none;
-}
-
-.side-sub-menu-item{
-    a{
-        border-left: 2px solid $side-menu!important;
-        padding : {
-            top: 0.50rem!important;
-            bottom: 0.50rem!important;;
+    & .side-sub-menu {
+        .side-sub-menu-item {
+            a:hover{
+                border-color: $primary!important;
+                color: $primary!important;
+            }
         }
     }
-}
-.side-sub-menu {
-    .side-sub-menu-item {
-        a:hover{
-            border-color: $white!important;
+    & .sub-menu-parent{
+        &::before{
+            color: $dark;
         }
-    }
-}
-.sub-menu-parent{
-    position: relative!important;
-}
-.sub-menu-parent{
-    &::before{
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f107";
-        color: $white;
-        position: absolute;
-        top: 1rem;
-        right: 0;
     }
 }

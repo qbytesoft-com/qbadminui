@@ -4,4 +4,6 @@ main{
     float: right;
     min-height: 1500px;
     transition: all ease 0.5s;
+    overflow: hidden!important;
+    position: relative;
 }

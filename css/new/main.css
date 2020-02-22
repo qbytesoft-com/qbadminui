@@ -397,6 +397,7 @@ h3 {
 
 .card {
   box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08) !important;
+  overflow: hidden !important;
 }
 
 .primary-btn, .btn-primary:focus, .btn-outline-primary:focus, .btn-primary:hover, .btn-outline-primary:hover, .btn-primary, .btn-outline-primary {
@@ -850,8 +851,43 @@ button.close {
   background-color: #663399 !important;
 }
 
+.bootstrap-icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.theme-option {
+  width: 20rem;
+  height: auto;
+  background: #ffffff;
+  top: 5rem;
+  right: -20rem;
+  z-index: 99999;
+  transition: all ease 0.5s;
+}
+.theme-option .theme-pck {
+  cursor: pointer;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  background: #6B5CAB;
+  position: absolute;
+  left: -3rem;
+  top: 0;
+  border-radius: 5px 0 0 5px;
+}
+.theme-option.active {
+  right: 0;
+}
+.theme-option .side-nav-themes p {
+  cursor: pointer;
+}
+
 /* The sidebar */
 .side-bar {
+  background: #6B5CAB;
   height: 100vh !important;
   width: 17rem !important;
   visibility: hidden;
@@ -863,47 +899,33 @@ button.close {
   z-index: 99;
   overflow: auto;
 }
-
-.side-bar-active {
-  visibility: visible;
-  transition: all ease 0.5s;
-  left: 0;
-  overflow: auto;
-}
-
-.brand-img {
-  width: 20%;
-}
-
-.brand-name {
+.side-bar .brand-name {
+  color: #343a40 !important;
   font-size: 1.5rem;
 }
-
-.side-menu-heading {
+.side-bar .brand-img {
+  width: 20%;
+}
+.side-bar .side-menu-heading {
   color: #ffffff !important;
   border-bottom: 1px solid #ffffff !important;
 }
-
-.the_menu {
+.side-bar .the_menu {
   padding-bottom: 5rem !important;
 }
-
-.side-menu {
+.side-bar .side-menu {
   list-style: none !important;
 }
-
-.side-menu-item:hover {
+.side-bar .side-menu-item:hover {
   background: #43309b !important;
 }
-
-.side-menu-item a, .side-sub-menu-item a {
+.side-bar .side-menu-item a, .side-bar .side-sub-menu-item a {
   display: block;
   color: #ffffff !important;
   transition: all ease 0.3s;
   position: relative !important;
 }
-
-.side-menu-item a::after {
+.side-bar .side-menu-item a::after {
   content: "";
   width: 0.6rem;
   height: 0.6rem;
@@ -913,30 +935,24 @@ button.close {
   top: 1.5rem;
   left: 0;
 }
-
-.side-menu-item a:hover {
+.side-bar .side-menu-item a:hover {
   padding-left: 2rem !important;
 }
-
-.side-sub-menu {
+.side-bar .side-sub-menu {
   list-style: none;
 }
-
-.side-sub-menu-item a {
+.side-bar .side-sub-menu-item a {
   border-left: 2px solid #43309b !important;
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
 }
-
-.side-sub-menu .side-sub-menu-item a:hover {
+.side-bar .side-sub-menu .side-sub-menu-item a:hover {
   border-color: #ffffff !important;
 }
-
-.sub-menu-parent {
+.side-bar .sub-menu-parent {
   position: relative !important;
 }
-
-.sub-menu-parent::before {
+.side-bar .sub-menu-parent::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
@@ -944,6 +960,44 @@ button.close {
   position: absolute;
   top: 1rem;
   right: 0;
+}
+
+.side-bar-active {
+  visibility: visible;
+  transition: all ease 0.5s;
+  left: 0;
+  overflow: auto;
+}
+
+.side-bar[data-theme=light] {
+  background: #ffffff !important;
+}
+.side-bar[data-theme=light] .brand-name {
+  color: #343a40 !important;
+}
+.side-bar[data-theme=light] .side-menu-heading {
+  color: #343a40 !important;
+  border-bottom: 1px solid #343a40 !important;
+}
+.side-bar[data-theme=light] .side-menu-item:hover {
+  background: unset !important;
+}
+.side-bar[data-theme=light] .side-menu-item a, .side-bar[data-theme=light] .side-sub-menu-item a {
+  color: #343a40 !important;
+  transition: all ease 0.3s;
+}
+.side-bar[data-theme=light] .side-menu-item a::after {
+  border: 2px solid #343a40;
+}
+.side-bar[data-theme=light] .side-sub-menu-item a {
+  border-left: 2px solid #ffffff !important;
+}
+.side-bar[data-theme=light] .side-sub-menu .side-sub-menu-item a:hover {
+  border-color: #663399 !important;
+  color: #663399 !important;
+}
+.side-bar[data-theme=light] .sub-menu-parent::before {
+  color: #343a40;
 }
 
 /* Navber section */
@@ -998,6 +1052,8 @@ main {
   float: right;
   min-height: 1500px;
   transition: all ease 0.5s;
+  overflow: hidden !important;
+  position: relative;
 }
 
 /* ==========================================================================

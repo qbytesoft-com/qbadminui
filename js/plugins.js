@@ -36,5 +36,32 @@ $(document).ready(function(){
         $(".page-body").removeClass("page-active");
         $("body").removeClass("body-active");
     })
+
+    // Theme
+    setSideNavTheme();
+    $(".theme-pck").click(function(){
+      $(".theme-option").toggleClass("active");
+    })
+    $(".side-nav-theme").click(function(){
+      let theme_color = $(this).attr("theme-color");
+      $(".side-nav-theme").removeClass("active");
+      // Store side nav theme to localstorage
+      let themeOptions = {sideNavTheme : theme_color};
+      localStorage.setItem("theme",JSON.stringify(themeOptions));
+      setSideNavTheme();
+    })
+    // Set side nav function
+    function setSideNavTheme(){
+      let localstr = localStorage.getItem("theme");
+      let nav_theme = JSON.parse(localstr).sideNavTheme;
+
+      if($(".side-bar").attr("data-theme") == "purple")
+      {
+        $(".side-bar").attr("data-theme",nav_theme)
+      }else{
+        $(".side-bar").attr("data-theme",nav_theme)
+      }
+    }
+    
     
 })
