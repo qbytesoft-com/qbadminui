@@ -53,14 +53,17 @@ $(document).ready(function(){
     // Set side nav function
     function setSideNavTheme(){
       let localstr = localStorage.getItem("theme");
-      let nav_theme = JSON.parse(localstr).sideNavTheme;
+      if(localstr){
+        let nav_theme = JSON.parse(localstr).sideNavTheme;
 
-      if($(".side-bar").attr("data-theme") == "purple")
-      {
-        $(".side-bar").attr("data-theme",nav_theme)
-      }else{
-        $(".side-bar").attr("data-theme",nav_theme)
+        if($(".side-bar").attr("data-theme") == "purple")
+        {
+          $(".side-bar").attr("data-theme",nav_theme)
+        }else{
+          $(".side-bar").attr("data-theme",nav_theme)
+        }
       }
+      
     }
     
     
