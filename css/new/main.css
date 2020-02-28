@@ -851,12 +851,28 @@ button.close {
   background-color: #663399 !important;
 }
 
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #663399 !important;
+  background-color: #663399 !important;
+}
+
+.custom-control input[type=checkbox]:focus {
+  border: #c3a1e4;
+  box-shadow: #c3a1e4;
+}
+
+.form-control:focus {
+  border-color: #663399;
+  box-shadow: 0 0 0 0.2rem #c3a1e4 !important;
+}
+
 .bootstrap-icon {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
 .theme-option {
+  position: fixed !important;
   width: 20rem;
   height: auto;
   background: #ffffff;
@@ -884,10 +900,16 @@ button.close {
 .theme-option .side-nav-themes p {
   cursor: pointer;
 }
+.theme-option .side-nav-themes .side-nav-theme-primary {
+  background: linear-gradient(-154deg, #639, #33214b) !important;
+}
+.theme-option .side-nav-themes .side-nav-theme-light {
+  background: #e8eaeb !important;
+}
 
 /* The sidebar */
 .side-bar {
-  background: #6B5CAB;
+  background: linear-gradient(-154deg, #639, #33214b) !important;
   height: 100vh !important;
   width: 17rem !important;
   visibility: hidden;
@@ -900,7 +922,7 @@ button.close {
   overflow: auto;
 }
 .side-bar .brand-name {
-  color: #343a40 !important;
+  color: #ffffff !important;
   font-size: 1.5rem;
 }
 .side-bar .brand-img {
@@ -915,9 +937,6 @@ button.close {
 }
 .side-bar .side-menu {
   list-style: none !important;
-}
-.side-bar .side-menu-item:hover {
-  background: #43309b !important;
 }
 .side-bar .side-menu-item a, .side-bar .side-sub-menu-item a {
   display: block;
@@ -942,11 +961,11 @@ button.close {
   list-style: none;
 }
 .side-bar .side-sub-menu-item a {
-  border-left: 2px solid #43309b !important;
+  border-left: 2px solid transparent;
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
 }
-.side-bar .side-sub-menu .side-sub-menu-item a:hover {
+.side-bar .side-sub-menu-item a:hover {
   border-color: #ffffff !important;
 }
 .side-bar .sub-menu-parent {
@@ -979,12 +998,8 @@ button.close {
   color: #343a40 !important;
   border-bottom: 1px solid #343a40 !important;
 }
-.side-bar[data-theme=light] .side-menu-item:hover {
-  background: unset !important;
-}
 .side-bar[data-theme=light] .side-menu-item a, .side-bar[data-theme=light] .side-sub-menu-item a {
   color: #343a40 !important;
-  transition: all ease 0.3s;
 }
 .side-bar[data-theme=light] .side-menu-item a::after {
   border: 2px solid #343a40;
@@ -992,7 +1007,7 @@ button.close {
 .side-bar[data-theme=light] .side-sub-menu-item a {
   border-left: 2px solid #ffffff !important;
 }
-.side-bar[data-theme=light] .side-sub-menu .side-sub-menu-item a:hover {
+.side-bar[data-theme=light] .side-sub-menu-item a:hover {
   border-color: #663399 !important;
   color: #663399 !important;
 }
@@ -1020,6 +1035,7 @@ button.close {
 .profile-avatar {
   width: 50%;
   border-radius: 50%;
+  margin-top: -0.5rem;
 }
 
 .search-round input {
@@ -1056,6 +1072,19 @@ main {
   position: relative;
 }
 
+.login-page {
+  height: 100vh;
+  background: #ffffff;
+}
+
+.login-brand {
+  height: 5rem;
+}
+
+.erro-page {
+  height: 100vh;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -1067,6 +1096,10 @@ main {
   }
 }
 @media only screen and (min-width: 768px) {
+  .border-md-right {
+    border-right: 1px solid #bbb !important;
+  }
+
   .page-active {
     filter: unset;
     -webkit-filter: unset;

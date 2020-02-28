@@ -3,6 +3,7 @@
     font-weight: 900;
 }
 .theme-option{
+    position: fixed!important;
     width: 20rem;
     height: auto;
     background: $white;
@@ -29,22 +30,12 @@
     & .side-nav-themes{
         & p{
             cursor: pointer;
-            // &.active{
-            //     position: relative;
-            //     &::before{
-            //         @extend .bootstrap-icon;
-            //         content: "\f00c";
-            //         font-size: 0.5rem;
-            //         color: $dark;
-            //         padding: 0;
-            //         margin: 0;
-            //         position: absolute;
-            //         width: 100%;
-            //         text-align: center;
-            //         top: 0.6rem;
-            //         left: 0;
-            //     }
-            // }
+        }
+        & .side-nav-theme-primary{
+            background: $side-menu-bg-primary!important;
+        }
+        & .side-nav-theme-light{
+            background: $bg-light!important;
         }
     }
 }

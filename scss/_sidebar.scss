@@ -1,6 +1,6 @@
 /* The sidebar */
 .side-bar{
-    background: $bg-primary-c;
+    background: $side-menu-bg-primary!important;
     height: 100vh!important;
     width: 17rem!important;
     visibility: hidden;
@@ -12,7 +12,7 @@
     z-index: 99;
     overflow: auto;
     & .brand-name{
-        color: $dark!important;
+        color: $white!important;
         font-size: 1.5rem;
     }
     & .brand-img{
@@ -28,12 +28,6 @@
     & .side-menu{
         list-style: none!important;
     }
-    & .side-menu-item{
-        &:hover{
-            background: $side-menu!important;
-        }
-        
-    }
     
     & .side-menu-item,.side-sub-menu-item{
         a{
@@ -45,21 +39,18 @@
         
     }
     
-    & .side-menu-item a{
-        &::after{
-            content: "";
-            width: 0.6rem;
-            height: 0.6rem;
-            border-radius: 50%;
-            border:2px solid $white;
-            position: absolute;
-            top: 1.5rem;
-            left: 0;
-        }
-        
-    }
-    & .side-menu-item{
-        a{
+    & .side-menu-item {
+        & a{
+            &::after{
+                content: "";
+                width: 0.6rem;
+                height: 0.6rem;
+                border-radius: 50%;
+                border:2px solid $white;
+                position: absolute;
+                top: 1.5rem;
+                left: 0;
+            }
             &:hover{
                 padding-left: 2rem!important;
             }
@@ -71,16 +62,12 @@
     
     & .side-sub-menu-item{
         a{
-            border-left: 2px solid $side-menu!important;
+            border-left: 2px solid transparent;
             padding : {
                 top: 0.50rem!important;
                 bottom: 0.50rem!important;;
             }
-        }
-    }
-    & .side-sub-menu {
-        .side-sub-menu-item {
-            a:hover{
+            &:hover{
                 border-color: $white!important;
             }
         }
@@ -122,16 +109,9 @@
         color: $dark!important;
         border-bottom: 1px solid $dark!important;
     }
-    & .side-menu-item{
-        &:hover{
-            background: unset!important;
-        }
-        
-    }
     & .side-menu-item,.side-sub-menu-item{
-        a{
+        & a{
             color: $dark!important;
-            transition: all ease 0.3s;
         }
         
     }
@@ -144,11 +124,7 @@
     & .side-sub-menu-item{
         a{
             border-left: 2px solid $white!important;
-        }
-    }
-    & .side-sub-menu {
-        .side-sub-menu-item {
-            a:hover{
+            &:hover{
                 border-color: $primary!important;
                 color: $primary!important;
             }

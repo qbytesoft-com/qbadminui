@@ -210,3 +210,20 @@ $all-badge : ("primary" : $primary, "secondary" : $secondary, "success" : $succe
         background-color: $primary!important;
     }
 }
+
+//Form component
+    // Checkbox
+.custom-control-input:checked~.custom-control-label::before{
+    border-color: $primary!important;
+    background-color: $primary!important;
+}
+.custom-control input[type="checkbox"]:focus{
+    border: $primary-shadow;
+    box-shadow: $primary-shadow;
+}
+
+    //form control
+.form-control:focus{
+    border-color: $primary;
+    box-shadow: 0 0 0 0.2rem $primary-shadow!important;
+}
