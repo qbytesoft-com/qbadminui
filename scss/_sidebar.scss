@@ -11,26 +11,29 @@
     transition: all ease 0.5s;
     z-index: 99;
     overflow: auto;
-    & .brand-name{
-        color: $white!important;
-        font-size: 1.5rem;
-    }
-    & .brand-img{
-        width: 20%;
-    }
-    & .side-menu-heading{
-        color: $white!important;
-        border-bottom: 1px solid $white!important;
-    }
+    & .side-menu-brand{
+        & .brand-name{
+            color: $white!important;
+            font-size: 1.5rem;
+        }
+        & .brand-img{
+            width: 20%;
+        }
+    } 
     & .the_menu{
         padding-bottom: 5rem!important;
-    }
-    & .side-menu{
-        list-style: none!important;
+        & .side-menu-heading{
+            color: $white!important;
+            border-bottom: 1px solid $white!important;
+        }
+        & .side-menu{
+            list-style: none!important;
+        }
     }
     
     & .side-menu-item,.side-sub-menu-item{
         a{
+            font-size: 0.9rem!important;
             display: block;
             color: $white!important;
             transition: all ease 0.3s;

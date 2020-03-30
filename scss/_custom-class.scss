@@ -106,3 +106,10 @@
 .accordion-right-icon a.collapsed::after{
     content: "\f077";
 }
+// input elements
+.input-icon{
+    position: absolute;
+    top: 2.3rem;
+    right: 1.5rem;
+    color: $text-secondary-light;
+}

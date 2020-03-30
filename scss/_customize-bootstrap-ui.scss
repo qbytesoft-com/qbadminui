@@ -2,24 +2,51 @@
 .dropdown-menu{
     margin: 0.125rem 1rem 0!important;
 }
+label{
+    font-size: 12px!important;
+}
+// All color
+$all-color : ("primary" : $primary, "success" : $success, "warning" : $warning, "info" : $info, "danger" : $danger);
+
+// Backgroung color mixing
+@mixin bg-color($name,$value) {
+    .bg-#{$name}{
+        background-color: $value!important;
+    }
+}
+// all background color
+@each $name,$value in $all-color  {
+    @include bg-color($name, $value);
+}
+// .input-group-append{
+//     & span{
+//         font-size: 12px!important;;
+//     }
+// }
 @mixin text-color($name,$value) {
     .text-#{$name}{
         color: $value!important;
     }
 }
-// text color
-$all-text-color : ("primary" : $primary, "success" : $success, "warning" : $warning, "info" : $info, "danger" : $danger);
-@each $name, $value in $all-text-color {
+// text color loop
+@each $name, $value in $all-color {
     @include text-color($name,$value)
 }
-.dropdown-item.active, .dropdown-item:active {
-    background-color: unset!important;
+.dropdown-item{
+    color: $primary;
+}
+.dropdown-item.active, .dropdown-item:active,.page-item.active .page-link,.list-group-item.active{
+    background-color: $primary!important;
+    color: $white!important;
+    border-color: $primary!important;
 }
 .card{
     box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08)!important;
-    overflow: hidden!important;
 }
     // button
+.btn{
+    font-size: 12px!important;
+}
     // bootstrap button mixin function
 @mixin bootstrap-btn($name,$color,$shadow) {
     .#{$name}-btn{
@@ -110,7 +137,7 @@ $all-bootstrap-btn:
     height: 50px;
     text-align: center;
 }
-        // Alert
+    // Alert
 .alert{
     border-radius: 0.8rem!important;
 }
@@ -184,10 +211,12 @@ $all-badge : ("primary" : $primary, "secondary" : $secondary, "success" : $succe
     // lg
 .badge-rounded-primary.lg,.badge-rounded-success.lg,.badge-rounded-danger.lg,.badge-rounded-warning.lg,.badge-rounded-info.lg,.badge-rounded-dark.lg{
     @include badge-style("rounded",40px,35px);
+    font-size: 1rem!important;
 }
     //xl
 .badge-rounded-primary.xl,.badge-rounded-success.xl,.badge-rounded-danger.xl,.badge-rounded-warning.xl,.badge-rounded-info.xl,.badge-rounded-dark.xl{
     @include badge-style("rounded",50px,45px);
+    font-size: 1rem!important;
 }
 // Badge squary
     // sm
@@ -197,10 +226,12 @@ $all-badge : ("primary" : $primary, "secondary" : $secondary, "success" : $succe
     //lg
 .badge-square-primary.lg,.badge-square-success.lg,.badge-square-danger.lg,.badge-square-warning.lg,.badge-square-info.lg,.badge-square-dark.lg{
     @include badge-style("squares",40px,35px);
+    font-size: 1rem!important;
 }
     // Xl
 .badge-square-primary.xl,.badge-square-success.xl,.badge-square-danger.xl,.badge-square-warning.xl,.badge-square-info.xl,.badge-square-dark.xl{
     @include badge-style("squares",50px,45px);
+    font-size: 1rem!important;
 }
 
 // Tab component
@@ -226,4 +257,24 @@ $all-badge : ("primary" : $primary, "secondary" : $secondary, "success" : $succe
 .form-control:focus{
     border-color: $primary;
     box-shadow: 0 0 0 0.2rem $primary-shadow!important;
+}
+.form-text {
+    font-size: 10px!important;
+}
+
+// Progressbar
+.progress-bar{
+    background-color: $primary;
+}
+// list
+.list-group-item-action{
+    color: $dark!important;
+}
+// table
+.table-primary, .table-primary>td, .table-primary>th{
+    background-color: rgba($color: $primary, $alpha: 0.2);
+}
+// card
+.card-title{
+    font-size: 1.1rem!important;
 }

@@ -3,6 +3,7 @@
    Author's custom styles
    ========================================================================== */
 body{
+    font-size: .8rem;
     font-family: 'Open Sans', sans-serif;
 }
 a{
@@ -10,11 +11,14 @@ a{
     text-decoration: none!important;
 }
 p{
-    font-size: 0.9rem!important;
+    // font-size: 0.9rem!important;
 }
 img{
     object-fit: contain!important;
     object-position: center!important;
+}
+input::placeholder{
+    font-size: 12px;
 }
 
 @import "./pre-write",

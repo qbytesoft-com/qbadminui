@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Blank page | qbytAdmin</title>
+  <title>Paginations | qbytAdmin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google fonts -->
@@ -101,7 +101,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Main section -->
         <main class="bg-light">
 
@@ -249,188 +248,269 @@
             <!--Page Body part -->
             <div class="page-body p-4 text-dark">
                 <div class="page-heading border-bottom d-flex flex-row">
-                    <h5 class="font-weight-normal">Alert</h5>
+                    <h5 class="font-weight-normal">Paginations</h5>
                     <small class="mt-2 ml-2">UI elements</small>
                 </div>
-                <!-- Alert component -->
-                <div class="row my-4">
-                    <div class="col-12 mt-4">
-                        <!-- Alert with Dismissing -->
+
+                <div class="mt-4">
+                    <p class="d-inline">use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping <code>nav</code> element to identify it as a navigation section to screen readers and other assistive technologies.</p>
+                </div>
+
+                <!-- All Paginations components  -->
+                <div class="row">
+                    <!-- Col md 4 -->
+                    <div class="col-md-4 mt-4">
+                        <!-- Default Pagination card -->
                         <div class="card rounded-lg">
                             <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Bootstrap Custom Alerts with Dismissing</div>
-                                <!-- bootstrap alert's -->
-                                <div class="alerts">
-                                    <!-- Primary alert -->
-                                    <div class="alert alert-card alert-primary" role="alert">
-                                        <strong>Primary! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Success alert -->
-                                    <div class="alert alert-card  alert-success" role="alert">
-                                        <strong>Success! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Info alert -->
-                                    <div class="alert alert-card  alert-info" role="alert">
-                                        <strong>Info! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Warning alert -->
-                                    <div class="alert alert-card  alert-warning" role="alert">
-                                        <strong>Warning! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Danger alert -->
-                                    <div class="alert alert-card  alert-danger" role="alert">
-                                        <strong>Danger! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
+                                <div class="card-title">Default Pagination</div>
+                                <p class="text-muted">It’s advisable to provide a descriptive <code>aria-label</code> for the nav to reflect its purpose</p>
+                                <!-- Paginations -->
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
 
-
-                                </div>
                             </div>
+
                         </div>
+
                     </div>
-                    <!-- col 12 -->
-                    <div class="col-12 mt-4">
-                        <!-- card -->
+
+                    <!-- Col md 4 -->
+                    <div class="col-md-4 mt-4">
+                        <!-- Pagination With Icons card -->
                         <div class="card rounded-lg">
-                            <!-- card body -->
                             <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Bootstrap Alerts</div>
-                                <!-- bootstrap alert's -->
-                                <div class="alerts">
-                                    <!-- Primary alert -->
-                                    <div class="alert alert-primary" role="alert">
-                                        <strong>Primary! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
-                                    <!-- Success alert -->
-                                    <div class="alert alert-success" role="alert">
-                                        <strong>Success! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
-                                    <!-- Info alert -->
-                                    <div class="alert alert-info" role="alert">
-                                        <strong>Info! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
-                                    <!-- Warning alert -->
-                                    <div class="alert alert-warning" role="alert">
-                                        <strong>Warning! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
-                                    <!-- Danger alert -->
-                                    <div class="alert alert-danger" role="alert">
-                                        <strong>Danger! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
+                                <div class="card-title">Pagination With Icons</div>
+                                <p class="text-muted">Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code>aria</code> attributes and the <code>.sr-only</code> utility.</p>
+                                <!-- Paginations -->
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </nav>
 
-
-                                </div>
                             </div>
+
                         </div>
+                        
                     </div>
-                    <!-- col 12 -->
-                    <div class="col-12 mt-4">
-                        <!-- Alert with Dismissing -->
+
+                    <!-- Col md 4 -->
+                    <div class="col-md-4 mt-4">
+                        <!-- Pagination With active state card -->
                         <div class="card rounded-lg">
-                            <!-- card body -->
                             <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Bootstrap Alerts with Dismissing</div>
-                                <!-- bootstrap alert's -->
-                                <div class="alerts">
-                                    <!-- Primary alert -->
-                                    <div class="alert alert-primary" role="alert">
-                                        <strong>Primary! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Success alert -->
-                                    <div class="alert alert-success" role="alert">
-                                        <strong>Success! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Info alert -->
-                                    <div class="alert alert-info" role="alert">
-                                        <strong>Info! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Warning alert -->
-                                    <div class="alert alert-warning" role="alert">
-                                        <strong>Warning! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Danger alert -->
-                                    <div class="alert alert-danger" role="alert">
-                                        <strong>Danger! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
+                                <div class="card-title">Pagination With Active state</div>
+                                <p class="text-muted">Pagination links are customizable for different circumstances. Use <code>.active</code> for links that appear un-clickable.</p>
+                                <!-- Paginations -->
+                                <nav aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active">
+                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
 
-
-                                </div>
                             </div>
+
                         </div>
+                        
                     </div>
-                    <!-- col 12 -->
-                    <div class="col-12 mt-4">
-                        <!-- card  -->
-                        <div class="card">
-                            <!-- card body -->
-                            <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Additional content</div>
-                                <div class="alert alert-success" role="alert">
-                                    <h4 class="alert-heading">Well done!</h4>
-                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                                    <hr>
-                                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-                                </div>
-                            </div>
-                        </div>
 
+                    <!-- Col md 4 -->
+                    <div class="col-md-4 mt-4">
+                        <!-- Pagination With disabled state card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Pagination With disabled state</div>
+                                <p class="text-muted">Pagination links are customizable for different circumstances. Use <code>.disabled</code> for links that appear un-clickable.</p>
+                                <!-- Paginations -->
+                                <nav aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active">
+                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <!-- Col md 4 -->
+                    <div class="col-md-4 mt-4">
+                        <!-- Large Pagination card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Large Pagination</div>
+                                <p class="text-muted">Fancy larger pagination? Add <code>.pagination-lg</code> additional size.</p>
+                                <!-- Paginations -->
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-lg">
+                                        <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">1</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <!-- Col md 4 -->
+                    <div class="col-md-4 mt-4">
+                        <!-- Small Pagination card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Small Pagination</div>
+                                <p class="text-muted">Fancy larger pagination? Add <code>.pagination-sm</code> additional size.</p>
+                                <!-- Paginations -->
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-sm">
+                                        <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">1</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <!-- Col md 4 -->
+                    <div class="col-md-4 mt-4">
+                        <!-- Center Alignment Pagination card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Center Alignment Pagination</div>
+                                <p class="text-muted">Change the alignment of pagination components with flexbox utilities.</p>
+                                <!-- Paginations -->
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <!-- Col md 4 -->
+                    <div class="col-md-4 mt-4">
+                        <!-- Right Alignment Pagination card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Right Alignment Pagination</div>
+                                <p class="text-muted">Change the alignment of pagination components with flexbox utilities.</p>
+                                <!-- Paginations -->
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+                                        <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <!-- Col md 4 -->
+                    <div class="col-md-4 mt-4">
+                        <!-- Left Alignment Pagination card -->
+                        <div class="card rounded-lg">
+                            <div class="card-body">
+                                <div class="card-title">Left Alignment Pagination</div>
+                                <p class="text-muted">Change the alignment of pagination components with flexbox utilities.</p>
+                                <!-- Paginations -->
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-start">
+                                        <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+
+                        </div>
+                        
                     </div>
 
                 </div>
-                
+
+
             </div>
         </main>
   </div>

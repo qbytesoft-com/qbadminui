@@ -69,6 +69,9 @@ $(document).ready(function(){
     }
     
   }
+
+  //active toltops
+  $('[data-toggle="tooltip"]').tooltip();
     
     
 })

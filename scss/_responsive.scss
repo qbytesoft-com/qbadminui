@@ -14,6 +14,8 @@
         .border-md-right{
             border-right: 1px solid $light!important;
         }
+    }
+    @media only screen and (min-width: 992px) {
         .page-active{
             filter: unset;
             -webkit-filter: unset;

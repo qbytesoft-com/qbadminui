@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Blank page | qbytAdmin</title>
+  <title>Toltips | qbytAdmin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google fonts -->
@@ -101,7 +101,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Main section -->
         <main class="bg-light">
 
@@ -249,188 +248,128 @@
             <!--Page Body part -->
             <div class="page-body p-4 text-dark">
                 <div class="page-heading border-bottom d-flex flex-row">
-                    <h5 class="font-weight-normal">Alert</h5>
+                    <h5 class="font-weight-normal">Toltips</h5>
                     <small class="mt-2 ml-2">UI elements</small>
                 </div>
-                <!-- Alert component -->
-                <div class="row my-4">
+
+                <!-- All toltips component here -->
+                <div class="row mt-4">
+                    <!-- Col 12 -->
                     <div class="col-12 mt-4">
-                        <!-- Alert with Dismissing -->
+                        <!-- Basic Tooltips card -->
                         <div class="card rounded-lg">
                             <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Bootstrap Custom Alerts with Dismissing</div>
-                                <!-- bootstrap alert's -->
-                                <div class="alerts">
-                                    <!-- Primary alert -->
-                                    <div class="alert alert-card alert-primary" role="alert">
-                                        <strong>Primary! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Success alert -->
-                                    <div class="alert alert-card  alert-success" role="alert">
-                                        <strong>Success! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Info alert -->
-                                    <div class="alert alert-card  alert-info" role="alert">
-                                        <strong>Info! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Warning alert -->
-                                    <div class="alert alert-card  alert-warning" role="alert">
-                                        <strong>Warning! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Danger alert -->
-                                    <div class="alert alert-card  alert-danger" role="alert">
-                                        <strong>Danger! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-
-
+                                <div class="card-title">Basic Tooltips</div>
+                                <p class="text-muted">Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left.</p>
+                                <!-- Basic Tooltips -->
+                                <div class="d-flex justify-content-between">
+                                    <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    Tooltip on top
+                                    </button>
+                                    <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                                    Tooltip on right
+                                    </button>
+                                    <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                    Tooltip on bottom
+                                    </button>
+                                    <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                                    Tooltip on left
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- col 12 -->
+
+                    <!-- Col 12 -->
                     <div class="col-12 mt-4">
-                        <!-- card -->
+                        <!-- Tooltips Trigger card -->
                         <div class="card rounded-lg">
-                            <!-- card body -->
                             <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Bootstrap Alerts</div>
-                                <!-- bootstrap alert's -->
-                                <div class="alerts">
-                                    <!-- Primary alert -->
-                                    <div class="alert alert-primary" role="alert">
-                                        <strong>Primary! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
-                                    <!-- Success alert -->
-                                    <div class="alert alert-success" role="alert">
-                                        <strong>Success! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
-                                    <!-- Info alert -->
-                                    <div class="alert alert-info" role="alert">
-                                        <strong>Info! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
-                                    <!-- Warning alert -->
-                                    <div class="alert alert-warning" role="alert">
-                                        <strong>Warning! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
-                                    <!-- Danger alert -->
-                                    <div class="alert alert-danger" role="alert">
-                                        <strong>Danger! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
+                                <div class="card-title">Tooltips Trigger</div>
+                                <p class="text-muted">Tooltip is triggered using - click | hover | focus | manual options. You may pass multiple triggers; separate them with a space. "manual" cannot be combined with any other trigger.</p>
+                                <!-- Basic Tooltips -->
+                                <div class="d-flex justify-content-between">
 
+                                    <div class="click-toltips">
+                                        <small>Use <code>data-trigger="click"</code> for click trigger.</small><br>
+                                        <button type="button" class="btn btn-success mt-2" data-toggle="tooltip" data-trigger="click" data-placement="top" title="Tooltip on top">
+                                            On click trigger
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="click-toltips">
+                                        <small>Use <code>data-trigger="focus"</code> for click trigger.</small><br>
+                                        <button type="button" class="btn btn-primary mt-2" data-toggle="tooltip" data-trigger="focus"  data-placement="right" title="Tooltip on right">
+                                            On focus trigger
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="click-toltips">
+                                        <small>Use <code>data-trigger="hover"</code> for click trigger.</small><br>
+                                        <button type="button" class="btn btn-warning mt-2" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Tooltip on bottom">
+                                            On hover trigger
+                                        </button>
+                                    </div>
+                                    
 
+                                    <div class="click-toltips">
+                                        <small>Use <code>data-trigger="manual"</code> for manual trigger.</small><br>
+                                        <button type="button" class="btn btn-danger mt-2" data-toggle="tooltip" data-trigger="manual" data-placement="left" title="Tooltip on left">
+                                            Manual trigger
+                                        </button>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- col 12 -->
+
+
+                    <!-- Col 12 -->
                     <div class="col-12 mt-4">
-                        <!-- Alert with Dismissing -->
+                        <!-- Tooltip Options card -->
                         <div class="card rounded-lg">
-                            <!-- card body -->
                             <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Bootstrap Alerts with Dismissing</div>
-                                <!-- bootstrap alert's -->
-                                <div class="alerts">
-                                    <!-- Primary alert -->
-                                    <div class="alert alert-primary" role="alert">
-                                        <strong>Primary! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Success alert -->
-                                    <div class="alert alert-success" role="alert">
-                                        <strong>Success! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Info alert -->
-                                    <div class="alert alert-info" role="alert">
-                                        <strong>Info! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Warning alert -->
-                                    <div class="alert alert-warning" role="alert">
-                                        <strong>Warning! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Danger alert -->
-                                    <div class="alert alert-danger" role="alert">
-                                        <strong>Danger! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                <div class="card-title">Tooltip Options</div>
+                                <p class="text-muted">Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-animation="".</p>
+                                <!-- Basic Tooltips -->
+                                <div class="d-flex justify-content-between">
+
+                                    <div class="click-toltips">
+                                        <small>Use <code>data-animation="true"</code> for animation.</small><br>
+                                        <button type="button" class="btn btn-success mt-2" data-toggle="tooltip" data-animation="true" data-placement="top" title="Tooltip on top">
+                                            With animation
                                         </button>
                                     </div>
 
-
+                                    <div class="click-toltips">
+                                        <small>Use <code>data-animation="false"</code> for no animation.</small><br>
+                                        <button type="button" class="btn btn-danger mt-2" data-toggle="tooltip" data-animation="false" data-placement="top" title="Tooltip on top">
+                                            With no animation
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="click-toltips">
+                                        <small>Use <code>data-delay="1000"</code> for 1000ms delay.</small><br>
+                                        <button type="button" class="btn btn-primary mt-2" data-toggle="tooltip" data-delay="1000"  data-placement="right" title="Tooltip on right">
+                                            Delay
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="click-toltips">
+                                        <small>Use <code>data-html="true"</code>for html.</small><br>
+                                        <button type="button" class="btn btn-warning" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                                            Tooltip with HTML
+                                        </button>
+                                    </div>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- col 12 -->
-                    <div class="col-12 mt-4">
-                        <!-- card  -->
-                        <div class="card">
-                            <!-- card body -->
-                            <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Additional content</div>
-                                <div class="alert alert-success" role="alert">
-                                    <h4 class="alert-heading">Well done!</h4>
-                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                                    <hr>
-                                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
 
                 </div>
-                
             </div>
         </main>
   </div>
@@ -440,6 +379,8 @@
   <script src="js/vendor/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/echarts.min.js"></script>
+  <script src="js/vendor/echarts.option.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>

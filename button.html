@@ -22,13 +22,15 @@
 
   <div class="container-fluid px-0">
         <!-- The side bar -->
-        <div class="side-bar bg-primary-c">
+        <div class="side-bar" data-theme="purple">
+            <!-- Brand details -->
             <div class="side-menu-brand d-flex flex-row justify-content-center clear mt-3">
                 <img src="img/QbyteIcon.png" alt="bran_name" class="brand-img">
-                <a href="#" class="brand-name mt-2 ml-2 font-weight-bold text-light">qbytAdmin</a>
+                <a href="#" class="brand-name mt-2 ml-2 font-weight-bold">qbytAdmin</a>
             </div>
             <!-- Side bar menu -->
             <div class="the_menu mt-5">
+                <!-- Heading -->
                 <h6 class="side-menu-heading font-weight-bold pb-2 mx-3">Main Menu</h6>
                 <!-- Menu item -->
                 <div id="accordion">
@@ -46,19 +48,42 @@
                                 <li class="side-sub-menu-item px-3"><a href="bootstrap_tab.html" class="w-100 pl-4 small">Bootstrap tab</a></li>
                                 <li class="side-sub-menu-item px-3"><a href="cards.html" class="w-100 pl-4 small">Cards</a></li>
                                 <li class="side-sub-menu-item px-3"><a href="carousels.html" class="w-100 pl-4 small">Carousels</a></li>
-                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Dropdown</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="dropdown.html" class="w-100 pl-4 small">Dropdown</a></li>
                                 <li class="side-sub-menu-item px-3"><a href="list.html" class="w-100 pl-4 small">Llist</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="modal.html" class="w-100 pl-4 small">Modals</a></li>
                                 <li class="side-sub-menu-item px-3"><a href="paginations.html" class="w-100 pl-4 small">Paginations</a></li>
                                 <li class="side-sub-menu-item px-3"><a href="progressbar.html" class="w-100 pl-4 small">Progressbar</a></li>
                                 <li class="side-sub-menu-item px-3"><a href="tooltip.html" class="w-100 pl-4 small">Tooltip</a></li>
-                                <li class="side-sub-menu-item px-3"><a href="#" class="w-100 pl-4 small">Typography</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="typography.html" class="w-100 pl-4 small">Typography</a></li>
                             </ul>
                         </div>
 
 
-                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Form Elements</a></li>
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#form-sub-menu" aria-expanded="false" aria-controls="form-sub-menu">Form Elements</a></li>
+                        <!-- Sub menu -->
+                        <div id="form-sub-menu" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="form_basic.html" class="w-100 pl-4 small">Basic Elements</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="form_basic_action.html" class="w-100 pl-4 small">Basic Action Bar</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="form_layout.html" class="w-100 pl-4 small">Form layouts</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="multi_column_forms.html" class="w-100 pl-4 small">Multi Column Forms</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="input_group.html" class="w-100 pl-4 small">Input Group</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="form_validation.html" class="w-100 pl-4 small">Form Validation</a></li>
+                            </ul>
+                        </div>
                         <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Charts</a></li>
-                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Tables</a></li>
+
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#table-sub-menu" aria-expanded="false" aria-controls="table-sub-menu">Tables</a></li>
+                        <!-- Sub menu -->
+                        <div id="table-sub-menu" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="basic_table.html" class="w-100 pl-4 small">Basic Table</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="datatables.html" class="w-100 pl-4 small">DataTables</a></li>
+                            </ul>
+                        </div>
+
                         <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Icons</a></li>
                         <!-- Sub menu parent -->
                         <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#sub_menu_2" aria-expanded="true" aria-controls="sub_menu_2">User Pages</a></li>
@@ -82,7 +107,7 @@
             <!-- Theme changer -->
         <div class="theme-option p-4">
             <div class="theme-pck">
-                <i class="fas fa-cog"></i>
+                <i class="fas fa-cog fa-lg"></i>
             </div>
             <p>Navbar:</p>
             <div class="side-nav-themes d-flex flex-row">
@@ -115,7 +140,8 @@
                     <div class="dropdown dropdown-arow-none d-contents text-center mx-2 pt-1">
                         <!-- Icon -->
                         <a href="#" class="w-100 dropdown-toggle text-muted position-relative" data-toggle="dropdown">
-                            <i class="far fa-envelope fa-lg"></i>
+                            <!-- Message -->
+                            <i class="far fa-envelope fa-2x"></i>
                             <span class="badge badge-danger position-absolute notification-badge">3</span>
                         </a>
                         <!-- Dropdown menu -->
@@ -163,7 +189,8 @@
                     <div class="dropdown dropdown-arow-none d-contents text-center mx-2 pt-1">
                         <!-- icon -->
                         <a href="#" class="w-100 dropdown-toggle text-muted position-relative" data-toggle="dropdown">
-                            <i class="far fa-bell fa-lg"></i>
+                            <!-- Notification -->
+                            <i class="far fa-bell fa-2x"></i>
                             <span class="badge badge-primary position-absolute notification-badge">3</span>
                         </a>
                         <!-- Dropdown menu -->
@@ -245,6 +272,7 @@
                         </div>
 
                     </div>
+
                     <div class="col-md-6 mt-4">
                         <!-- Rounded button card -->
                         <div class="card rounded-lg">
@@ -263,6 +291,7 @@
                         </div>
                         
                     </div>
+
                     <div class="col-md-6 mt-4">
                         <!-- Raised button card -->
                         <div class="card rounded-lg">
@@ -281,6 +310,7 @@
                         </div>
                         
                     </div>
+
                     <div class="col-md-6 mt-4">
                         <!-- Outline button card -->
                         <div class="card rounded-lg">
@@ -299,6 +329,7 @@
                         </div>
                         
                     </div>
+
                     <div class="col-md-6 mt-4">
                         <!-- block button card -->
                         <div class="card rounded-lg">
@@ -313,6 +344,7 @@
                         </div>
                         
                     </div>
+
                     <div class="col-md-6 mt-4">
                         <!-- Large & Small Buttons button card -->
                         <div class="card rounded-lg">
@@ -335,6 +367,7 @@
                         </div>
                         
                     </div>
+
                     <div class="col-md-6 mt-4">
                         <!-- Buttons group button card -->
                         <div class="card rounded-lg">
@@ -352,6 +385,7 @@
                         </div>
                         
                     </div>
+
                     <div class="col-md-6 mt-4">
                         <!-- Button with Icons card -->
                         <div class="card rounded-lg">
@@ -367,11 +401,13 @@
                         </div>
                         
                     </div>
+                    
                     <div class="col-md-6 mt-4">
                         <!-- Button with Social Icons card -->
                         <div class="card rounded-lg">
                             <div class="card-body">
                                 <div class="card-title">Button with social icons</div>
+
                                 <div class="buttons mt-2">
                                     <button class="btn btn-raised btn-facebook btn-icon m-2"><i class="fab fa-facebook-f"></i> Facebook</button>
                                     <button class="btn btn-raised btn-google btn-icon m-2"><i class="fab fa-google-plus-g"></i> Google +</button>
@@ -381,6 +417,7 @@
                                     <button class="btn btn-raised btn-dribble btn-icon m-2"><i class="fab fa-dribbble"></i> Dribble</button>
                                     <button class="btn btn-raised btn-youtube btn-icon m-2"><i class="fab fa-youtube"></i> Youtube</button>
                                 </div>
+
                                 <div class="buttons mt-2">
                                     <button class="btn btn-raised btn-facebook btn-icon m-2 px-3"><i class="fab fa-facebook-f"></i></button>
                                     <button class="btn btn-raised btn-google btn-icon m-2 px-3"><i class="fab fa-google-plus-g"></i></button>
@@ -390,6 +427,7 @@
                                     <button class="btn btn-raised btn-dribble btn-icon m-2 px-3"><i class="fab fa-dribbble"></i></button>
                                     <button class="btn btn-raised btn-youtube btn-icon m-2 px-3"><i class="fab fa-youtube"></i></button>
                                 </div>
+
                                 <div class="buttons mt-2">
                                     <button class="btn btn-raised btn-facebook btn-icon rounded-circle m-2 px-3"><i class="fab fa-facebook-f"></i></button>
                                     <button class="btn btn-raised btn-google btn-icon rounded-circle m-2 px-3"><i class="fab fa-google-plus-g"></i></button>
@@ -399,12 +437,19 @@
                                     <button class="btn btn-raised btn-dribble btn-icon rounded-circle m-2 px-3"><i class="fab fa-dribbble"></i></button>
                                     <button class="btn btn-raised btn-youtube btn-icon rounded-circle m-2 px-3"><i class="fab fa-youtube"></i></button>
                                 </div>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </main>
+        
   </div>
   
 

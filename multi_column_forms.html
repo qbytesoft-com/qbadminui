@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Blank page | qbytAdmin</title>
+  <title>Form Basic Elements | qbytAdmin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google fonts -->
@@ -101,7 +101,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Main section -->
         <main class="bg-light">
 
@@ -249,190 +248,225 @@
             <!--Page Body part -->
             <div class="page-body p-4 text-dark">
                 <div class="page-heading border-bottom d-flex flex-row">
-                    <h5 class="font-weight-normal">Alert</h5>
-                    <small class="mt-2 ml-2">UI elements</small>
+                    <h5 class="font-weight-normal">Multi Column Forms</h5>
+                    <small class="mt-2 ml-2">Form Elements</small>
                 </div>
-                <!-- Alert component -->
-                <div class="row my-4">
+                <!-- All Multi Column Forms elemetns-->
+                <div class="row mt-4">
                     <div class="col-12 mt-4">
-                        <!-- Alert with Dismissing -->
+                        <!-- 2 Columns Form Layout card -->
                         <div class="card rounded-lg">
                             <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Bootstrap Custom Alerts with Dismissing</div>
-                                <!-- bootstrap alert's -->
-                                <div class="alerts">
-                                    <!-- Primary alert -->
-                                    <div class="alert alert-card alert-primary" role="alert">
-                                        <strong>Primary! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
+                                <div class="card-title">2 Columns Form Layout</div>
+                                <!-- Create 2 row -->
+                                <div class="row">
+                                    <!-- 1st row -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name-1">Full Name:</label>
+                                            <input id="name-1" class="form-control bg-light" type="text" name="name1" aria-describedby="mul-input-name1" placeholder="Enter your name">
+                                            <small id="mul-input-name1" class="form-text text-secondary">Please enter your full name</small>
+                                        </div>
                                     </div>
-                                    <!-- Success alert -->
-                                    <div class="alert alert-card  alert-success" role="alert">
-                                        <strong>Success! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
+                                    <!-- 2nd row -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="contact-number-1">Contact Number:</label>
+                                            <input id="contact-number-1" class="form-control bg-light" type="text" name="contact1" aria-describedby="mul-input-phone1" placeholder="Enter your contact number">
+                                            <small id="mul-input-phone1" class="form-text text-secondary">Please enter your contact number</small>
+                                        </div>
                                     </div>
-                                    <!-- Info alert -->
-                                    <div class="alert alert-card  alert-info" role="alert">
-                                        <strong>Info! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
+                                </div>
+                                <hr>
+                                <!-- Create 2 row -->
+                                <div class="row">
+                                    <!-- 1st row -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="address-1">Address:</label>
+                                            <input id="address-1" class="form-control bg-light" type="text" name="address1" aria-describedby="mul-input-address1" placeholder="Enter your address">
+                                            <!-- Input icon -->
+                                            <span class="input-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </span>
+                                            <small id="mul-input-address1" class="form-text text-secondary">Please enter your address</small>
+                                        </div>
                                     </div>
-                                    <!-- Warning alert -->
-                                    <div class="alert alert-card  alert-warning" role="alert">
-                                        <strong>Warning! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
+                                    <!-- 2nd row -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone-1">Postcode:</label>
+                                            <input id="phone-1" class="form-control bg-light" type="text" name="phone1" placeholder="Enter your postcode">
+                                            <!-- Input icon -->
+                                            <span class="input-icon">
+                                                <i class="fas fa-mail-bulk"></i>
+                                            </span>
+                                            <small id="mul-input-address1" class="form-text text-secondary">Please enter your postcode</small>
+                                        </div>
                                     </div>
-                                    <!-- Danger alert -->
-                                    <div class="alert alert-card  alert-danger" role="alert">
-                                        <strong>Danger! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
+                                </div>
+                                <hr>
+                                <!-- Radio input -->
+                                <p>User Group:</p>
+                                <div class="d-flex flex-row">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio1">Sales Person</label>
                                     </div>
-
-
+                                    <div class="custom-control custom-radio ml-3">
+                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio1">Customer</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card footer -->
+                            <div class="card-footer mt-3">
+                                <!-- Row -->
+                                <div class="row">
+                                    <!-- Col 8 -->
+                                    <div class="col-8">
+                                        <!-- Submit and cancel button -->
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button class="btn btn-primary btn-outline-primary ml-2">Cancel</button>
+                                    </div>
+                                    <!-- Col 4 -->
+                                    <div class="col-4">
+                                        <div class="float-right">
+                                            <!-- Delete button -->
+                                            <button class="btn btn-danger">Delete</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- col 12 -->
                     <div class="col-12 mt-4">
-                        <!-- card -->
+                        <!-- 3 Columns Form Layout card -->
                         <div class="card rounded-lg">
-                            <!-- card body -->
                             <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Bootstrap Alerts</div>
-                                <!-- bootstrap alert's -->
-                                <div class="alerts">
-                                    <!-- Primary alert -->
-                                    <div class="alert alert-primary" role="alert">
-                                        <strong>Primary! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
+                                <div class="card-title">3 Columns Form Layout</div>
+                                <!-- Create 3 row -->
+                                <div class="row">
+                                    <!-- 1st row -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="name-1">Full Name:</label>
+                                            <input id="name-1" class="form-control bg-light" type="text" name="name1" aria-describedby="mul-input-name1" placeholder="Enter your name">
+                                            <small id="mul-input-name1" class="form-text text-secondary">Please enter your full name</small>
+                                        </div>
                                     </div>
-                                    <!-- Success alert -->
-                                    <div class="alert alert-success" role="alert">
-                                        <strong>Success! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
+                                    <!-- 2nd row -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="contact-number-1">Contact Number:</label>
+                                            <input id="contact-number-1" class="form-control bg-light" type="text" name="contact1" aria-describedby="mul-input-phone1" placeholder="Enter your contact number">
+                                            <small id="mul-input-phone1" class="form-text text-secondary">Please enter your contact number</small>
+                                        </div>
                                     </div>
-                                    <!-- Info alert -->
-                                    <div class="alert alert-info" role="alert">
-                                        <strong>Info! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
-                                    <!-- Warning alert -->
-                                    <div class="alert alert-warning" role="alert">
-                                        <strong>Warning! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
-                                    <!-- Danger alert -->
-                                    <div class="alert alert-danger" role="alert">
-                                        <strong>Danger! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        
-                                    </div>
+                                    <!-- 3rd row -->
+                                    <div class="col-md-4">
+                                        <!-- Form group -->
+                                        <div class="form-group">
+                                            <label for="username1">Username:</label>
+                                            <!-- Input group -->
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text text-secondary-light id="basic-addon1"><i class="far fa-user"></i></span>
+                                                </div>
+                                                <input id="username1" class="form-control bg-light" type="text" name="username1" aria-describedby="username1" placeholder="Username">
+                                            </div>
+                                            <!-- Hlper -->
+                                            <small id="username1" class="form-text text-secondary">Please enter your username</small>
+                                        </div>
 
-
+                                    </div>
                                 </div>
+                                <hr>
+                                <!-- Create 3 row -->
+                                <div class="row">
+                                    <!-- 1st row -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="website1">Website:</label>
+                                            <input id="website1" class="form-control bg-light" type="text" name="website1" aria-describedby="website1" placeholder="Enter your website">
+                                            <small id="website1" class="form-text text-secondary">Please enter your website</small>
+                                        </div>
+                                    </div>
+                                    <!-- 2nd row -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="fax-1">Fax:</label>
+                                            <input id="fax-1" class="form-control bg-light" type="text" name="fax1" aria-describedby="fax-1" placeholder="Fax Number">
+                                            <!-- Input icon -->
+                                            <span class="input-icon">
+                                                <i class="fas fa-fax"></i>
+                                            </span>
+                                            <small id="fax-1" class="form-text text-secondary">Please enter your Fax</small>
+                                        </div>
+                                    </div>
+                                    <!-- 3rd row -->
+                                    <div class="col-md-4">
+                                        <!-- Form group -->
+                                        <div class="form-group">
+                                            <label for="address-1">Address:</label>
+                                            <input id="address-1" class="form-control bg-light" type="text" name="address1" aria-describedby="mul-input-address1" placeholder="Enter your address">
+                                            <!-- Input icon -->
+                                            <span class="input-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </span>
+                                            <small id="mul-input-address1" class="form-text text-secondary">Please enter your address</small>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <hr>
+                                <!-- Create 3 row -->
+                                <div class="row">
+                                    <!-- 1st row -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="phone-1">Postcode:</label>
+                                            <input id="phone-1" class="form-control bg-light" type="text" name="phone1" placeholder="Enter your postcode">
+                                            <!-- Input icon -->
+                                            <span class="input-icon">
+                                                <i class="fas fa-mail-bulk"></i>
+                                            </span>
+                                            <small id="mul-input-address1" class="form-text text-secondary">Please enter your postcode</small>
+                                        </div>
+                                    </div>
+                                    <!-- 2nd row -->
+                                    <div class="col-md-4">
+                                        <!-- Radio input -->
+                                        <p>User Group:</p>
+                                        <div class="d-flex flex-row">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio1">Sales Person</label>
+                                            </div>
+                                            <div class="custom-control custom-radio ml-3">
+                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio1">Customer</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card footer -->
+                            <div class="card-footer mt-3">
+                                <!-- Action button -->
+                                <div class="text-center">
+                                    <!-- Submit and cancel button -->
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button class="btn btn-primary btn-outline-primary ml-2">Cancel</button>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    <!-- col 12 -->
-                    <div class="col-12 mt-4">
-                        <!-- Alert with Dismissing -->
-                        <div class="card rounded-lg">
-                            <!-- card body -->
-                            <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Bootstrap Alerts with Dismissing</div>
-                                <!-- bootstrap alert's -->
-                                <div class="alerts">
-                                    <!-- Primary alert -->
-                                    <div class="alert alert-primary" role="alert">
-                                        <strong>Primary! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Success alert -->
-                                    <div class="alert alert-success" role="alert">
-                                        <strong>Success! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Info alert -->
-                                    <div class="alert alert-info" role="alert">
-                                        <strong>Info! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Warning alert -->
-                                    <div class="alert alert-warning" role="alert">
-                                        <strong>Warning! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <!-- Danger alert -->
-                                    <div class="alert alert-danger" role="alert">
-                                        <strong>Danger! </strong>
-                                        Lorem ipsum dolor sit amet.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col 12 -->
-                    <div class="col-12 mt-4">
-                        <!-- card  -->
-                        <div class="card">
-                            <!-- card body -->
-                            <div class="card-body">
-                                <!-- Card title -->
-                                <div class="card-title">Additional content</div>
-                                <div class="alert alert-success" role="alert">
-                                    <h4 class="alert-heading">Well done!</h4>
-                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                                    <hr>
-                                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
-                
             </div>
-        </main>
+        </div>
+    </main>
   </div>
   
 

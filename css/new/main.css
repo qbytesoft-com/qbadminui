@@ -3,6 +3,7 @@
 Author's custom styles
 ========================================================================== */
 body {
+  font-size: 0.8rem;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -11,13 +12,13 @@ a {
   text-decoration: none !important;
 }
 
-p {
-  font-size: 0.9rem !important;
-}
-
 img {
   object-fit: contain !important;
   object-position: center !important;
+}
+
+input::placeholder {
+  font-size: 12px;
 }
 
 html {
@@ -366,9 +367,40 @@ h3 {
   content: "";
 }
 
+.input-icon {
+  position: absolute;
+  top: 2.3rem;
+  right: 1.5rem;
+  color: #6c757d;
+}
+
 /* Customize bootstrap classes */
 .dropdown-menu {
   margin: 0.125rem 1rem 0 !important;
+}
+
+label {
+  font-size: 12px !important;
+}
+
+.bg-primary {
+  background-color: #663399 !important;
+}
+
+.bg-success {
+  background-color: #4caf50 !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.bg-info {
+  background-color: #003473 !important;
+}
+
+.bg-danger {
+  background-color: #f44336 !important;
 }
 
 .text-primary {
@@ -391,13 +423,22 @@ h3 {
   color: #f44336 !important;
 }
 
-.dropdown-item.active, .dropdown-item:active {
-  background-color: unset !important;
+.dropdown-item {
+  color: #663399;
+}
+
+.dropdown-item.active, .dropdown-item:active, .page-item.active .page-link, .list-group-item.active {
+  background-color: #663399 !important;
+  color: #ffffff !important;
+  border-color: #663399 !important;
 }
 
 .card {
   box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08) !important;
-  overflow: hidden !important;
+}
+
+.btn {
+  font-size: 12px !important;
 }
 
 .primary-btn, .btn-primary:focus, .btn-outline-primary:focus, .btn-primary:hover, .btn-outline-primary:hover, .btn-primary, .btn-outline-primary {
@@ -808,6 +849,7 @@ button.close {
   width: 40px;
   height: 40px;
   line-height: 35px;
+  font-size: 1rem !important;
 }
 
 .badge-rounded-primary.xl, .badge-rounded-success.xl, .badge-rounded-danger.xl, .badge-rounded-warning.xl, .badge-rounded-info.xl, .badge-rounded-dark.xl {
@@ -817,6 +859,7 @@ button.close {
   width: 50px;
   height: 50px;
   line-height: 45px;
+  font-size: 1rem !important;
 }
 
 .badge-square-primary, .badge-square-success, .badge-square-danger, .badge-square-warning, .badge-square-info, .badge-square-dark {
@@ -835,6 +878,7 @@ button.close {
   width: 40px;
   height: 40px;
   line-height: 35px;
+  font-size: 1rem !important;
 }
 
 .badge-square-primary.xl, .badge-square-success.xl, .badge-square-danger.xl, .badge-square-warning.xl, .badge-square-info.xl, .badge-square-dark.xl {
@@ -844,6 +888,7 @@ button.close {
   width: 50px;
   height: 50px;
   line-height: 45px;
+  font-size: 1rem !important;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -866,6 +911,26 @@ button.close {
   box-shadow: 0 0 0 0.2rem #c3a1e4 !important;
 }
 
+.form-text {
+  font-size: 10px !important;
+}
+
+.progress-bar {
+  background-color: #663399;
+}
+
+.list-group-item-action {
+  color: #343a40 !important;
+}
+
+.table-primary, .table-primary > td, .table-primary > th {
+  background-color: rgba(102, 51, 153, 0.2);
+}
+
+.card-title {
+  font-size: 1.1rem !important;
+}
+
 .bootstrap-icon {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -873,19 +938,20 @@ button.close {
 
 .theme-option {
   position: fixed !important;
-  width: 20rem;
+  width: 15rem;
   height: auto;
   background: #ffffff;
   top: 5rem;
-  right: -20rem;
+  right: -15rem;
   z-index: 99999;
   transition: all ease 0.5s;
 }
 .theme-option .theme-pck {
   cursor: pointer;
   color: #ffffff;
-  text-align: center;
-  padding-top: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 3rem;
   height: 3rem;
   background: #6B5CAB;
@@ -921,24 +987,25 @@ button.close {
   z-index: 99;
   overflow: auto;
 }
-.side-bar .brand-name {
+.side-bar .side-menu-brand .brand-name {
   color: #ffffff !important;
   font-size: 1.5rem;
 }
-.side-bar .brand-img {
+.side-bar .side-menu-brand .brand-img {
   width: 20%;
-}
-.side-bar .side-menu-heading {
-  color: #ffffff !important;
-  border-bottom: 1px solid #ffffff !important;
 }
 .side-bar .the_menu {
   padding-bottom: 5rem !important;
 }
-.side-bar .side-menu {
+.side-bar .the_menu .side-menu-heading {
+  color: #ffffff !important;
+  border-bottom: 1px solid #ffffff !important;
+}
+.side-bar .the_menu .side-menu {
   list-style: none !important;
 }
 .side-bar .side-menu-item a, .side-bar .side-sub-menu-item a {
+  font-size: 0.9rem !important;
   display: block;
   color: #ffffff !important;
   transition: all ease 0.3s;
@@ -1035,7 +1102,7 @@ button.close {
 .profile-avatar {
   width: 50%;
   border-radius: 50%;
-  margin-top: -0.5rem;
+  margin-top: -0.2rem;
 }
 
 .search-round input {
@@ -1049,8 +1116,8 @@ button.close {
 
 /* Notification badge */
 .notification-badge {
-  top: -0.2rem;
-  right: 0.7rem;
+  top: -0.1rem;
+  right: 0.8rem;
   border-radius: 2rem;
 }
 
@@ -1084,6 +1151,9 @@ main {
 .erro-page {
   height: 100vh;
 }
+.erro-page h1 {
+  font-size: 8rem !important;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -1099,7 +1169,8 @@ main {
   .border-md-right {
     border-right: 1px solid #bbb !important;
   }
-
+}
+@media only screen and (min-width: 992px) {
   .page-active {
     filter: unset;
     -webkit-filter: unset;
