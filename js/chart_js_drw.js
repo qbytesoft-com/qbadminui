@@ -240,6 +240,8 @@ let chart8 = new Chart(myChart8,{
     }
 })
 
+// chart.canvas.parentNode.style.height = '128px';
+// chart.canvas.parentNode.style.width = '128px';
 // Polar Pie Chart
 let myChart9 = document.getElementById("pPieChart").getContext("2d");
 

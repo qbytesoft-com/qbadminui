@@ -8,9 +8,10 @@
 
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/new/main.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap-4.3.1/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -270,9 +271,7 @@
                             <div class="card-body">
                                 <div class="card-title">Six Month Sales</div>
                                 <!-- Chart -->
-                                <div class="d-flex justify-content-center">
-                                    <canvas id="lineChart"></canvas>
-                                </div>
+                                <canvas id="lineChart"></canvas>
                             </div>
                             
                         </div>
@@ -286,9 +285,7 @@
                             <div class="card-body">
                                 <div class="card-title">Six Month Sales VS Revenue</div>
                                 <!-- Chart -->
-                                <div class="d-flex justify-content-center">
-                                    <canvas id="lineChart1"></canvas>
-                                </div>
+                                <canvas id="lineChart1"></canvas>
                             </div>
                             
                         </div>
@@ -302,9 +299,7 @@
                             <div class="card-body">
                                 <div class="card-title">Multiple Bar chart</div>
                                 <!-- Chart -->
-                                <div class="d-flex justify-content-center">
-                                    <canvas id="barChart"></canvas>
-                                </div>
+                                <canvas id="barChart"></canvas>
                             </div>
                             
                         </div>
@@ -319,9 +314,7 @@
                             <div class="card-body">
                                 <div class="card-title">Single Bar chart</div>
                                 <!-- Chart -->
-                                <div class="d-flex justify-content-center">
-                                    <canvas id="barChart1"></canvas>
-                                </div>
+                                <canvas id="barChart1"></canvas>
                             </div>
                             
                         </div>
@@ -335,9 +328,7 @@
                             <div class="card-body">
                                 <div class="card-title">Horizontal Bar chart</div>
                                 <!-- Chart -->
-                                <div class="d-flex justify-content-center">
-                                    <canvas id="barChart2"></canvas>
-                                </div>
+                                <canvas id="barChart2"></canvas>
                             </div>
                             
                         </div>
@@ -351,9 +342,7 @@
                             <div class="card-body">
                                 <div class="card-title">Mix chart</div>
                                 <!-- Chart -->
-                                <div class="d-flex justify-content-center">
-                                    <canvas id="mixChart"></canvas>
-                                </div>
+                                <canvas id="mixChart"></canvas>
                             </div>
                             
                         </div>
@@ -367,9 +356,7 @@
                             <div class="card-body">
                                 <div class="card-title">Radar chart</div>
                                 <!-- Chart -->
-                                <div class="d-flex justify-content-center">
-                                    <canvas id="radarChart"></canvas>
-                                </div>
+                                <canvas id="radarChart" height="200px"></canvas>
                             </div>
                             
                         </div>
@@ -383,9 +370,7 @@
                             <div class="card-body">
                                 <div class="card-title">Doughnut Chart</div>
                                 <!-- Chart -->
-                                <div class="d-flex justify-content-center">
-                                    <canvas id="rdoughnutChart"></canvas>
-                                </div>
+                                <canvas id="rdoughnutChart" height="200px"></canvas>
                             </div>
                             
                         </div>
@@ -399,9 +384,7 @@
                             <div class="card-body">
                                 <div class="card-title">Pie Chart</div>
                                 <!-- Chart -->
-                                <div class="d-flex justify-content-center">
-                                    <canvas id="pieChart"></canvas>
-                                </div>
+                                <canvas id="pieChart" height="200px"></canvas>
                             </div>
                             
                         </div>
@@ -415,9 +398,7 @@
                             <div class="card-body">
                                 <div class="card-title">Polar Area Chart</div>
                                 <!-- Chart -->
-                                <div class="d-flex justify-content-center">
-                                    <canvas id="pPieChart"></canvas>
-                                </div>
+                                <canvas id="pPieChart" height="200px"></canvas>
                             </div>
                             
                         </div>
@@ -430,12 +411,15 @@
   </div>
   
 
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="js/vendor/bootstrap-4.3.1/modernizr-3.7.1.min.js"></script>
+  <script src="js/vendor/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="./js/vendor/Chart.min.js"></script>
+  <script src="js/vendor/bootstrap-4.3.1/bootstrap.min.js"></script>
+  <!-- Chart js -->
+  <script src="./js/vendor/Chart.js-2.9.3/Chart.min.js"></script>
   <script src="./js/chart_js_drw.js"></script>
+
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>
