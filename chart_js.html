@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Form Basic Elements | qbytAdmin</title>
+  <title>Chart JS | qbytAdmin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google fonts -->
@@ -256,177 +256,174 @@
             <!--Page Body part -->
             <div class="page-body p-4 text-dark">
                 <div class="page-heading border-bottom d-flex flex-row">
-                    <h5 class="font-weight-normal">Basic Action Bar</h5>
-                    <small class="mt-2 ml-2">Form Elements</small>
+                    <h5 class="font-weight-normal">Chart JS</h5>
+                    <small class="mt-2 ml-2">Chart Elements</small>
                 </div>
-                <!-- All Basic Form elements -->
+                <!-- All chart js elements here -->
+
                 <div class="row mt-4">
-                    <!-- Col 12 -->
-                    <div class="col-12 mt-4">
-                        <h4>Horizontal Layout</h4>
-                        <p>A form control layout using row to create horizontal alignment.</p>
-                        <!-- Default Action Bar card -->
+                    <!-- col md 6 -->
+                    <div class="col-md-6 mt-4">
+                        <!-- Six Month Sales Card -->
                         <div class="card rounded-lg">
+                            <!-- Card body -->
                             <div class="card-body">
-                                <form action="#">
-                                    <!-- Row -->
-                                    <div class="row">
-                                        <!-- Col -->
-                                        <div class="col-md-5 mt-3 mt-md-0">
-                                            <!-- Username -->
-                                            <div class="input-group">
-                                                <input class="form-control bg-light" type="text" name="username" placeholder="Enter your username">
-                                            </div>
-                                        </div>
-                                        <!-- Col -->
-                                        <div class="col-md-5 mt-3 mt-md-0">
-                                            <!-- Password -->
-                                            <div class="input-group">
-                                                <input class="form-control bg-light" type="password" name="password" placeholder="Enter your password">
-                                            </div>
-                                        </div>
-                                        <!-- Col -->
-                                        <div class="col-md-2 mt-3 mt-md-0">
-                                            <!-- Login button -->
-                                            <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                
+                                <div class="card-title">Six Month Sales</div>
+                                <!-- Chart -->
+                                <div class="d-flex justify-content-center">
+                                    <canvas id="lineChart"></canvas>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
-                    <!-- Col 12 -->
-                    <div class="col-12 mt-4">
-                        <h4>Verticle Layout</h4>
-                        <p>A form control layout using flex to create verticle alignment.</p>
+
+                    <!-- col md 6 -->
+                    <div class="col-md-6 mt-4">
+                        <!-- Six Month Sales VS Revenue Card -->
                         <div class="card rounded-lg">
+                            <!-- Card body -->
                             <div class="card-body">
-                                <form action="#">
-                                    <!-- Username -->
-                                    <div class="input-group mt-3">
-                                        <input class="form-control bg-light" type="text" name="username" placeholder="Enter your username">
-                                    </div>
-                                    <!-- Password -->
-                                    <div class="input-group mt-3">
-                                        <input class="form-control bg-light" type="password" name="password" placeholder="Enter your password">
-                                    </div>
-                                    <!-- Login button -->
-                                    <button type="submit" class="btn btn-lg btn-primary btn-block mt-3">Sign in</button>
-                                </form>
-                                
+                                <div class="card-title">Six Month Sales VS Revenue</div>
+                                <!-- Chart -->
+                                <div class="d-flex justify-content-center">
+                                    <canvas id="lineChart1"></canvas>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
-                    <!-- Col 12 -->
-                    <div class="col-12 mt-4">
-                        <h4>Left Label Alignment</h4>
-                        <p>A form control layout using row with left label alignment.</p>
+
+                    <!-- col md 6 -->
+                    <div class="col-md-6 mt-4">
+                        <!-- Multiple Bar chart Card -->
                         <div class="card rounded-lg">
+                            <!-- Card body -->
                             <div class="card-body">
-                                <form action="#">
-                                    <!-- name input -->
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <p>Email</p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control bg-light" placeholder="Email">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Email input -->
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <p>Password</p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="password" class="form-control bg-light" placeholder="Password">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Radios -->
-                                    <div class="row mt-3">
-                                        <div class="col-md-4">
-                                            <p>Radios</p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="radios">
-                                                <!-- First -->
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="firstRadio" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="firstRadio">First radio</label>
-                                                </div>
-                                                <!-- Second -->
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="secondRadio" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="secondRadio">Second radio</label>
-                                                </div>
-                                                <!-- Third -->
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="thirdRadio" name="customRadio" class="custom-control-input" disabled>
-                                                    <label class="custom-control-label" for="thirdRadio">Third disabled radio</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Checkbox -->
-                                    <div class="row mt-3">
-                                        <div class="col-md-4">
-                                            <p>Checkbox</p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="checkboxs">
-                                                <!-- First -->
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="getEmail1">
-                                                    <label class="custom-control-label" for="getEmail1">Example checkbox</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary mt-4">Sign in</button>
-                                </form>
-                                
+                                <div class="card-title">Multiple Bar chart</div>
+                                <!-- Chart -->
+                                <div class="d-flex justify-content-center">
+                                    <canvas id="barChart"></canvas>
+                                </div>
                             </div>
-                        </div>
-                        <!-- End card -->
-                    </div>  
-                    <!-- Col 12 -->
-                    <div class="col-12 mt-4">
-                        <h4>Form Inside Dropdown</h4>
-                        <p>A form group layout inside dropdown</p>
-                        <div class="card rounded-lg">
-                            <!-- Dropdown login form  -->
-                            <div class="card-body">
-                                <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Download file
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <form action="#" class="px-4 py-3">
-                                            <h5>Please Sign In First</h5>
-                                            <small>Lorem ipsum dolor sit amet.</small>
-                                            <!-- Username -->
-                                            <div class="input-group mt-3">
-                                                <input class="form-control bg-light" type="text" name="username" placeholder="Enter your username">
-                                            </div>
-                                            <!-- Password -->
-                                            <div class="input-group mt-3">
-                                                <input class="form-control bg-light" type="password" name="password" placeholder="Enter your password">
-                                            </div>
-                                            <!-- Login button -->
-                                            <button type="submit" class="btn btn-lg btn-primary btn-block mt-3">Sign in</button>
-                                        </form>
-                                        
-                                    </div>
-                                  </div>
-                            </div>
+                            
                         </div>
                     </div>
+
+
+                    <!-- col md 6 -->
+                    <div class="col-md-6 mt-4">
+                        <!-- Single Bar chart Card -->
+                        <div class="card rounded-lg">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="card-title">Single Bar chart</div>
+                                <!-- Chart -->
+                                <div class="d-flex justify-content-center">
+                                    <canvas id="barChart1"></canvas>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- col md 6 -->
+                    <div class="col-md-6 mt-4">
+                        <!-- Horizontal Bar chart Card -->
+                        <div class="card rounded-lg">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="card-title">Horizontal Bar chart</div>
+                                <!-- Chart -->
+                                <div class="d-flex justify-content-center">
+                                    <canvas id="barChart2"></canvas>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- col md 6 -->
+                    <div class="col-md-6 mt-4">
+                        <!-- Mix chart Card -->
+                        <div class="card rounded-lg">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="card-title">Mix chart</div>
+                                <!-- Chart -->
+                                <div class="d-flex justify-content-center">
+                                    <canvas id="mixChart"></canvas>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- col md 6 -->
+                    <div class="col-md-6 mt-4">
+                        <!-- Radar chart Card -->
+                        <div class="card rounded-lg">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="card-title">Radar chart</div>
+                                <!-- Chart -->
+                                <div class="d-flex justify-content-center">
+                                    <canvas id="radarChart"></canvas>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- col md 6 -->
+                    <div class="col-md-6 mt-4">
+                        <!-- Doughnut Chart Card -->
+                        <div class="card rounded-lg">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="card-title">Doughnut Chart</div>
+                                <!-- Chart -->
+                                <div class="d-flex justify-content-center">
+                                    <canvas id="rdoughnutChart"></canvas>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- col md 6 -->
+                    <div class="col-md-6 mt-4">
+                        <!-- Pie Chart Card -->
+                        <div class="card rounded-lg">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="card-title">Pie Chart</div>
+                                <!-- Chart -->
+                                <div class="d-flex justify-content-center">
+                                    <canvas id="pieChart"></canvas>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- col md 6 -->
+                    <div class="col-md-6 mt-4">
+                        <!-- Polar Area Chart Card -->
+                        <div class="card rounded-lg">
+                            <!-- Card body -->
+                            <div class="card-body">
+                                <div class="card-title">Polar Area Chart</div>
+                                <!-- Chart -->
+                                <div class="d-flex justify-content-center">
+                                    <canvas id="pPieChart"></canvas>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </main>
@@ -437,8 +434,9 @@
   <script src="js/vendor/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="./js/vendor/Chart.min.js"></script>
+  <script src="./js/chart_js_drw.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>

@@ -22,7 +22,7 @@
 
   <div class="container-fluid px-0">
         <!-- The side bar -->
-        <div class="side-bar" data-theme="purple">
+        <div class="side-bar side-bar-lg-active" data-theme="purple">
             <!-- Brand details -->
             <div class="side-menu-brand d-flex flex-row justify-content-center clear mt-3">
                 <img src="img/QbyteIcon.png" alt="bran_name" class="brand-img">
@@ -72,7 +72,15 @@
                                 <li class="side-sub-menu-item px-3"><a href="form_validation.html" class="w-100 pl-4 small">Form Validation</a></li>
                             </ul>
                         </div>
-                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Charts</a></li>
+                        
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#chart-sub-menu" aria-expanded="false" aria-controls="chart-sub-menu">Charts</a></li>
+                        <!-- Sub menu -->
+                        <div id="chart-sub-menu" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="chart_js.html" class="w-100 pl-4">Chart Js</a></li>
+                            </ul>
+                        </div>
 
                         <!-- Sub menu parent -->
                         <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#table-sub-menu" aria-expanded="false" aria-controls="table-sub-menu">Tables</a></li>
@@ -102,7 +110,7 @@
             </div>
         </div>
         <!-- Main section -->
-        <main class="bg-light">
+        <main class="main-full-body bg-light">
 
             <!-- Theme changer -->
         <div class="theme-option p-4">
@@ -118,7 +126,7 @@
         
             <!-- The navbar -->
             <nav class="navbar navbar-expand navbar-light bg-light py-3">
-                <p class="navbar-brand mb-0 pb-0 d-md-none">
+                <p class="navbar-brand mb-0 pb-0">
                     <span></span>
                     <span></span>
                     <span></span>

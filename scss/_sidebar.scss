@@ -91,12 +91,15 @@
     }
 }
 
-.side-bar-active{
-    visibility: visible;
-    transition: all ease 0.5s;
-    left: 0;
-    overflow: auto;
+@media only screen and (max-width : 991px){
+    .side-bar-sm-active{
+        visibility: visible;
+        transition: all ease 0.5s;
+        left: 0;
+        overflow: auto;
+    }
 }
+
 
 
 

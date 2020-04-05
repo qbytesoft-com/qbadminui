@@ -31,15 +31,16 @@ $(document).ready(function(){
   })
   // Navbar script
   $(".navbar-brand").click(function(){
-      $(".side-bar").toggleClass("side-bar-active");
+      $(".side-bar").toggleClass("side-bar-sm-active side-bar-lg-active");
       $(".page-body").toggleClass("page-active");
       $("body").toggleClass("body-active");
+      $("main").toggleClass("main-full-body");
   })
-  $(".page-body").click(function(){
-      $(".side-bar").removeClass("side-bar-active");
-      $(".page-body").removeClass("page-active");
-      $("body").removeClass("body-active");
-  })
+  // $(".page-body").click(function(){
+  //     $(".side-bar").removeClass("side-bar-active");
+  //     $(".page-body").removeClass("page-active");
+  //     $("body").removeClass("body-active");
+  // })
 
   // Theme
   setSideNavTheme();

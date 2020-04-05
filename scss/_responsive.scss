@@ -23,14 +23,15 @@
         .body-active{
             overflow: unset;
         }
-        .side-bar{
-            height: 100vh!important;
-            width: 17rem!important;
-            visibility: unset;
+        .side-bar-lg-active{
+            visibility: visible;
+            transition: all ease 0.5s;
+            left: 0;
+            overflow: auto;
             left: 0;
             top: 0;
         }
-        main{
+        .main-full-body{
             width: calc( 100% - 70px - 200px )!important;
         }
     }
