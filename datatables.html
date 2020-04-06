@@ -1,0 +1,3046 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Table | qbytAdmin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap-4.3.1/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Data Table stylesheet -->
+  <link rel="stylesheet" href="./css/vendor/Data Table 1.10.20/datatables.min.css"></link>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="position-relative">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="container-fluid px-0">
+        <!-- The side bar -->
+        <div class="side-bar side-bar-lg-active" data-theme="purple">
+            <!-- Brand details -->
+            <div class="side-menu-brand d-flex flex-row justify-content-center clear mt-3">
+                <img src="img/QbyteIcon.png" alt="bran_name" class="brand-img">
+                <a href="#" class="brand-name mt-2 ml-2 font-weight-bold">qbytAdmin</a>
+            </div>
+            <!-- Side bar menu -->
+            <div class="the_menu mt-5">
+                <!-- Heading -->
+                <h6 class="side-menu-heading font-weight-bold pb-2 mx-3">Main Menu</h6>
+                <!-- Menu item -->
+                <div id="accordion">
+                    <ul class="side-menu p-0 m-0 mt-3">
+                        <li class="side-menu-item px-3"><a href="index.html" class="w-100 py-3 pl-4">Dashboard</a></li>
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#sub_menu_1" aria-expanded="false" aria-controls="sub_menu_1">Basic UI Elements</a></li>
+                        <!-- Sub menu -->
+                        <div id="sub_menu_1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="alert.html" class="w-100 pl-4 small">Alert</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="accordion.html" class="w-100 pl-4 small">Accordion</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="badge.html" class="w-100 pl-4 small">Badge</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="button.html" class="w-100 pl-4 small">Button</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="bootstrap_tab.html" class="w-100 pl-4 small">Bootstrap tab</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="cards.html" class="w-100 pl-4 small">Cards</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="carousels.html" class="w-100 pl-4 small">Carousels</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="dropdown.html" class="w-100 pl-4 small">Dropdown</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="list.html" class="w-100 pl-4 small">Llist</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="modal.html" class="w-100 pl-4 small">Modals</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="paginations.html" class="w-100 pl-4 small">Paginations</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="progressbar.html" class="w-100 pl-4 small">Progressbar</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="tooltip.html" class="w-100 pl-4 small">Tooltip</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="typography.html" class="w-100 pl-4 small">Typography</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#form-sub-menu" aria-expanded="false" aria-controls="form-sub-menu">Form Elements</a></li>
+                        <!-- Sub menu -->
+                        <div id="form-sub-menu" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="form_basic.html" class="w-100 pl-4 small">Basic Elements</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="form_basic_action.html" class="w-100 pl-4 small">Basic Action Bar</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="form_layout.html" class="w-100 pl-4 small">Form layouts</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="multi_column_forms.html" class="w-100 pl-4 small">Multi Column Forms</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="input_group.html" class="w-100 pl-4 small">Input Group</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="form_validation.html" class="w-100 pl-4 small">Form Validation</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#chart-sub-menu" aria-expanded="false" aria-controls="chart-sub-menu">Charts</a></li>
+                        <!-- Sub menu -->
+                        <div id="chart-sub-menu" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="chart_js.html" class="w-100 pl-4">Chart Js</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#table-sub-menu" aria-expanded="false" aria-controls="table-sub-menu">Tables</a></li>
+                        <!-- Sub menu -->
+                        <div id="table-sub-menu" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="basic_table.html" class="w-100 pl-4 small">Basic Table</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="datatables.html" class="w-100 pl-4 small">DataTables</a></li>
+                            </ul>
+                        </div>
+
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4">Icons</a></li>
+                        <!-- Sub menu parent -->
+                        <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4 sub-menu-parent" data-toggle="collapse" data-target="#sub_menu_2" aria-expanded="true" aria-controls="sub_menu_2">User Pages</a></li>
+                        <!-- Sub menu -->
+                        <div id="sub_menu_2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <ul class="side-sub-menu p-0">
+                                <li class="side-sub-menu-item px-3"><a href="blank.html" class="w-100 pl-4 small">Blank Page</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="login.html" class="w-100 pl-4 small">Login</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="signup.html" class="w-100 pl-4 small">Register</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="404.html" class="w-100 pl-4 small">404</a></li>
+                                <li class="side-sub-menu-item px-3"><a href="500.html" class="w-100 pl-4 small">500</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Main section -->
+        <main class="main-full-body bg-light">
+
+            <!-- Theme changer -->
+        <div class="theme-option p-4">
+            <div class="theme-pck">
+                <i class="fas fa-cog fa-lg"></i>
+            </div>
+            <p>Navbar:</p>
+            <div class="side-nav-themes d-flex flex-row">
+                <p class="p-3 rounded side-nav-theme-primary side-nav-theme" theme-color="purple"></p>
+                <p class="p-3 rounded ml-2 side-nav-theme-light side-nav-theme" theme-color="light"></p>
+            </div>
+        </div>
+        
+            <!-- The navbar -->
+            <nav class="navbar navbar-expand navbar-light bg-light py-3">
+                <p class="navbar-brand mb-0 pb-0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
+                <!-- Navbar search section -->
+                <div class="navb-search ml-5 d-none d-md-block">
+                    <form action="#" method="POST">
+                        <div class="input-group search-round">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <div class="input-group-append">
+                                <button class="btn border" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Navbar right menu section -->
+                <div class="navb-menu ml-auto d-flex flex-row">
+                    <!-- Message dropdown -->
+                    <div class="dropdown dropdown-arow-none d-contents text-center mx-2 pt-1">
+                        <!-- Icon -->
+                        <a href="#" class="w-100 dropdown-toggle text-muted position-relative" data-toggle="dropdown">
+                            <!-- Message -->
+                            <i class="far fa-envelope fa-2x"></i>
+                            <span class="badge badge-danger position-absolute notification-badge">3</span>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-max-height p-0">
+                            <!-- Dropdown item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <!-- Profile image -->
+                                    <div class="notification-icon bg-secondary-c pt-3"><img src="img/profile.jpg" alt="img" class="w-75 img-round"></div>
+                                    <!-- Message notification -->
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">James <span class="badge badge-pill badge-primary">1</span></p>
+                                        <small>James : Hey! Are you busy?</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Dropdown item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <!-- Profile image -->
+                                    <div class="notification-icon bg-secondary-c pt-3"><img src="img/profile.jpg" alt="img" class="w-75 img-round"></div>
+                                    <!-- Message notification -->
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">Jhone <span class="badge badge-pill badge-primary">1</span></p>
+                                        <small>Jhone : Hey! I need help.</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Dropdown item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <!-- Profile image -->
+                                    <div class="notification-icon bg-secondary-c pt-3"><img src="img/profile.jpg" alt="img" class="w-75 img-round"></div>
+                                    <!-- Message notification -->
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">Mariam <span class="badge badge-pill badge-primary">1</span></p>
+                                        <small>Mariam : information</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Notification dropdown -->
+                    <div class="dropdown dropdown-arow-none d-contents text-center mx-2 pt-1">
+                        <!-- icon -->
+                        <a href="#" class="w-100 dropdown-toggle text-muted position-relative" data-toggle="dropdown">
+                            <!-- Notification -->
+                            <i class="far fa-bell fa-2x"></i>
+                            <span class="badge badge-primary position-absolute notification-badge">3</span>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu dropdown-menu-right p-0 dropdown-menu-max-height">
+                            <!-- Menu item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <div class="notification-icon bg-secondary-c pt-3 px-3"><i class="far fa-envelope text-primary fa-lg"></i></div>
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="mb-0">New message <span class="badge badge-pill badge-primary">New</span></p>
+                                        <small>James : Hey! Are you busy?</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Menu item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0">
+                                <div class="d-flex flex-row border-bottom">
+                                    <div class="notification-icon bg-secondary-c pt-3 px-3"><i class="fas fa-clipboard-list text-success fa-lg"></i></div>
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="m-0">New order received <span class="badge badge-pill badge-success">New</span></p>
+                                        <small>3 iPhone x</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Menu item -->
+                            <a href="#" class="dropdown-item text-secondary-light p-0 pr-2">
+                                <div class="d-flex flex-row border-bottom">
+                                    <div class="notification-icon bg-secondary-c pt-3 px-3"><i class="fas fa-box-open text-warning fa-lg"></i></div>
+                                    <div class="flex-grow-1 px-3 py-3">
+                                        <p class="m-0">Product out of stock <span class="badge badge-pill badge-warning small">1</span></p>
+                                        <small>Headphone E63</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Profile action dropdown -->
+                    <div class="dropdown dropdown-arow-none d-contents text-center mx-2">
+                        <!-- Icon -->
+                        <a href="#" class="w-100 dropdown-toggle text-muted" data-toggle="dropdown"><img src="img/profile.jpg" alt="profile" class="profile-avatar"></a>
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-max-height">
+                            <!-- Menu items -->
+                            <a href="#" class="dropdown-item disabled small"><i class="far fa-user mr-1"></i> Md.Maruf Ahmed</a>
+                            <a href="#" class="dropdown-item text-secondary-light">Account setting</a>
+                            <a href="#" class="dropdown-item text-secondary-light">Billing history</a>
+                            <a href="#" class="dropdown-item text-secondary-light">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            
+            <!--Page Body part -->
+            <div class="page-body p-4 text-dark">
+                <div class="page-heading border-bottom d-flex flex-row">
+                    <h5 class="font-weight-normal">Data Table</h5>
+                    <small class="mt-2 ml-2">UI elements</small>
+                </div>
+
+                <!-- Description -->
+                <div class="component-description my-4">
+                    <h5>Datatables</h5>
+                    <p>DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, build upon the foundations of progressive enhancement, that adds all of these advanced features to any HTML table.</p>
+                </div>
+                <!-- All data table elements -->
+                <!-- Basic data table example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Zero configuration</div>
+                        <p>DataTables has most features enabled by default, so all you need to do to use it with your own ables is to call the construction function: $().DataTable();.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="basicDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+
+                    </div>
+
+
+                </div>
+                <!-- Feature enable / disable example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Feature enable / disable</div>
+                        <p>Disabling features that you don't wish to use for a particular table is easily done by setting a variable in the initialisation object. The full list of <a href="https://datatables.net/reference/option">available</a> options is available in the <a href="https://datatables.net/reference/option">DataTables reference</a>.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="dataTable2" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+
+                    </div>
+
+
+                </div>
+                <!-- Default ordering (sorting) example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Default ordering (sorting)</div>
+                        <p>With DataTables you can alter the ordering characteristics of the table at initialisation time. Using the order initialisation parameter, you can set the table to display the data in exactly the order that you want.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="defaultOrderingDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Multi-column ordering example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Multi-column ordering</div>
+                        <p>DataTables allows ordering by multiple columns at the same time, which can be activated in a number of different ways.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="defaultMulOrderingDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Responsive Data Table example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Responsive Data Table</div>
+                        <p>In the modern world of responsive web design tables can often cause a particular problem for designers due to their row based layout. Responsive is an extension for DataTables that resolves that problem by optimising the table's layout for different screen sizes through the dynamic insertion and removal of columns from the table.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="responsiveDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th class="all">Id</th>
+                                        <th class="all">Name</th>
+                                        <th class="min-phone-p">Position</th>
+                                        <th class="min-phone-l">Office</th>
+                                        <th class="min-phone-l">Age</th>
+                                        <th class="min-tablet">Start data</th>
+                                        <th class="desktop">Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Hidden columns example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Hidden columns</div>
+                        <p>There are times when you might find it useful to display only a sub-set of the information that was available in the original table. For example you might want to reduce the amount of data shown on screen to make it clearer for the user (consider also using the <a href="https://datatables.net/extensions/responsive">Responsive extension</a> for this). This is done through the <a href="https://datatables.net/reference/option/columns.visible">columns.visible</a> column option.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="hidenDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th class="all">Id</th>
+                                        <th class="all">Name</th>
+                                        <th class="min-tablet">Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Complex headers (rowspan and colspan) example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Complex headers (rowspan and colspan)</div>
+                        <p>When using tables to display data, you will often wish to display column information in groups. DataTables fully supports <code>colspan</code> and <code>rowspan</code> in the table's header, assigning the required order listeners to the TH element suitable for that column.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="complexDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">Id</th>
+                                        <th colspan="3">HR Information</th>
+                                        <th colspan="3">Contact</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- DOM positioning example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">DOM positioning</div>
+                        <p>When customising DataTables for your own usage, you might find that the default position of the feature elements (filter input etc) is not quite to your liking. To address this issue DataTables takes inspiration from the CSS 3 Advanced Layout Module and provides the <a href="https://datatables.net/reference/option/dom">dom</a> initialisation parameter which can be set to indicate where you wish particular features to appear in the DOM. You can also specify <code>div</code> wrapping containers (with an id and / or class) to provide complete layout flexibility.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="domPositioningDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Alternative pagination example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Alternative pagination</div>
+                        <p>The default page control presented by DataTables (forward and backward buttons with up to 7 page numbers in-between) is fine for most situations, but there are cases where you may wish to customise the options presented to the end user. This is done through DataTables' extensible pagination mechanism, the <a href="https://datatables.net/reference/option/pagingType">pagingType</a> option.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="alternativePaginationDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Individual column searching example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Individual column searching</div>
+                        <p>The searching functionality provided by DataTables is useful for quickly search through the information in the table - however the search is global, and you may wish to present controls that search on specific columns.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="columnSearchDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Scroll - vertical example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Scroll - vertical</div>
+                        <p>This example shows the DataTables table body scrolling in the vertical direction. This can generally be seen as an alternative method to pagination for displaying a large table in a fairly small vertical area, and as such pagination has been disabled here (note that this is not mandatory, it will work just fine with pagination enabled as well!).</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="scrollVerticalDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Scroll - vertical, dynamic height example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Scroll - vertical, dynamic height</div>
+                        <p>This example shows a vertically scrolling DataTable that makes use of the CSS3 <code>vh</code> unit in order to dynamically resize the viewport based on the browser window height. The <code>vh</code> unit is effectively a percentage of the browser window height. So the <code>50vh</code> used in this example is 50% of the window height. The viewport size will update dynamically as the window is resized.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="dynamicScrollVerticalDataTable"">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Scroll - horizontal example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Scroll - horizontal</div>
+                        <p>DataTables has the ability to show tables with horizontal scrolling, which is very useful for when you have a wide table, but want to constrain it to a limited horizontal display area. To enable x-scrolling simply set the <a href="https://datatables.net/reference/option/scrollX">scrollX</a> parameter to be whatever you want the container wrapper's width to be (this should be 100% in almost all cases with the width being constrained by the container element).</p>
+                        <!-- Data table -->
+                        <div class="table-responsive" style="width: 75%;margin: auto;">
+                            <table class="table table-striped table-bordered" id="scrollHorizontalDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Scroll - horizontal and vertical example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Scroll - horizontal and vertical</div>
+                        <p>In this example you can see DataTables doing both horizontal and vertical scrolling at the same time. Note also that pagination is enabled in this example, and the scrolling accounts for this.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive" style="width: 75%;margin: auto;">
+                            <table class="table table-striped table-bordered" id="scrollVerticalHorizontalDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Language - Comma decimal place example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Language - Comma decimal place</div>
+                        <p>A dot (.) is used to mark the decimal place in Javascript, however, <a href="http://en.wikipedia.org/wiki/Decimal_mark">many parts of the world use a comma</a> (,) and other characters such as the Unicode decimal separator (⎖) or a dash (-) are often used to show the decimal place in a displayed number.</p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="languageComaDecimalDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+                <!-- Language options example -->
+                <div class="card mt-4 rounded-lg">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="card-title">Language options</div>
+                        <p>Changing the language information displayed by DataTables is as simple as passing in a <code>language</code> object to the DataTable constructor.                        </p>
+                        <!-- Data table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="languageDataTable" style="width: 100%;">
+                                <!-- Table head -->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table body -->
+                                <tbody>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Maruf Ahmed</td>
+                                        <td>Front End Developer</td>
+                                        <td>Dhaka</td>
+                                        <td>20</td>
+                                        <td>2019/12/12</td>
+                                        <td>$500,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433060</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <!-- Table Data -->
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table footer -->
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start data</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </main>
+  </div>
+  
+
+  <script src="js/vendor/bootstrap-4.3.1/modernizr-3.7.1.min.js"></script>
+  <script src="js/vendor/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="js/vendor/bootstrap-4.3.1/bootstrap.min.js"></script>
+  <!-- Data Table -->
+  <script src="./js/vendor/Data Table 1.10.20/datatables.min.js"></script>
+  <!-- Data Table script -->
+  <script src="./js/plugins scripts/dataTable_script.js"></script>
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
