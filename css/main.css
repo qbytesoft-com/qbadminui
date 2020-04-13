@@ -1184,7 +1184,7 @@ button.close {
 main {
   width: 100% !important;
   float: right;
-  min-height: 1500px;
+  min-height: 100vh;
   transition: all ease 0.5s;
   overflow: hidden !important;
   position: relative;
@@ -1240,9 +1240,15 @@ main {
     top: 0;
   }
 
-  .main-full-body {
+  .main-full-body, .footer-full-body {
     width: calc( 100% - 70px - 200px ) !important;
   }
+}
+footer {
+  width: 100%;
+  float: right;
+  overflow: hidden;
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */

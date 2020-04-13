@@ -35,6 +35,7 @@ $(document).ready(function(){
       $(".page-body").toggleClass("page-active");
       $("body").toggleClass("body-active");
       $("main").toggleClass("main-full-body");
+      $("footer").toggleClass("footer-full-body");
   })
   // $(".page-body").click(function(){
   //     $(".side-bar").removeClass("side-bar-active");
