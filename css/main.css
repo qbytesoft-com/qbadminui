@@ -963,6 +963,14 @@ button.close {
   font-size: 1.1rem !important;
 }
 
+.modal-dialog {
+  transform: scale(0) !important;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1) !important;
+}
+
 .bootstrap-icon {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;

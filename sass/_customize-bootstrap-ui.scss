@@ -278,3 +278,10 @@ $all-badge : ("primary" : $primary, "secondary" : $secondary, "success" : $succe
 .card-title{
     font-size: 1.1rem!important;
 }
+// Modal
+.modal-dialog{
+    transform: scale(0)!important;
+}
+.modal.show .modal-dialog{
+    transform: scale(1)!important;
+}
