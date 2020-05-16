@@ -1082,6 +1082,9 @@ button.close {
 .side-bar .side-sub-menu-item a:hover {
   border-color: #ffffff !important;
 }
+.side-bar .side-sub-menu-item .active {
+  border-color: #ffffff !important;
+}
 .side-bar .sub-menu-parent {
   position: relative !important;
 }
@@ -1128,6 +1131,9 @@ button.close {
 .side-bar[data-theme=light] .side-sub-menu-item a:hover {
   border-color: #663399 !important;
   color: #663399 !important;
+}
+.side-bar[data-theme=light] .side-sub-menu-item .active {
+  border-color: #663399 !important;
 }
 .side-bar[data-theme=light] .sub-menu-parent::before {
   color: #343a40;
