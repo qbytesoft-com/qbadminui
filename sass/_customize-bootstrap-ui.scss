@@ -254,7 +254,7 @@ $all-badge : ("primary" : $primary, "secondary" : $secondary, "success" : $succe
 }
 
     //form control
-.form-control:focus{
+.form-control:focus,.custom-select:focus{
     border-color: $primary;
     box-shadow: 0 0 0 0.2rem $primary-shadow!important;
 }

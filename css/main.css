@@ -938,7 +938,7 @@ button.close {
   box-shadow: #c3a1e4;
 }
 
-.form-control:focus {
+.form-control:focus, .custom-select:focus {
   border-color: #663399;
   box-shadow: 0 0 0 0.2rem #c3a1e4 !important;
 }
